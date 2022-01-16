@@ -1,1 +1,77 @@
 # config
+
+
+#golangci-lint
+
+linters-settings:
+  goconst:
+    min-len: 2
+    min-occurrences: 3
+  gocyclo:
+    min-complexity: 10
+  goimports:
+    local-prefixes: gitlab.com/aalysher/scrapper
+  golint:
+    min-confidence: 0
+
+
+linters:
+  # please, do not use `enable-all`: it's deprecated and will be removed soon.
+  # inverted configuration with `enable-all` and `disable` is not scalable during updates of golangci-lint
+  disable-all: true
+  enable:
+    - deadcode
+    - unused
+    - gosec
+    - gocyclo
+    - gofmt
+    - goimports
+    - nakedret
+    - dogsled
+    - revive
+    - exportloopref
+    - predeclared
+    - unconvert
+    - unparam
+    - bodyclose
+    - goconst
+    - ifshort
+
+  # don't enable:
+  # - gochecknoglobals
+  # - gocognit
+  # - godox
+  # - maligned
+  # - prealloc
+
+issues:
+  max-same-issues: 20
+
+run:
+  tests: false
+  allow-parallel-runners: true
+  skip-dirs:
+    - test/testdata_etc
+    - internal/cache
+    - internal/renameio
+    - internal/robustio
+
+# golangci.com configuration
+# https://github.com/golangci/golangci/wiki/Configuration
+service:
+  golangci-lint-version: 1.43.0 # use the fixed version to not introduce new linters unexpectedly
+
+
+
+
+#pre - commit hook
+
+#!/usr/bin/env bash
+
+golangci-lint run
+
+returncode=$?
+if [ $returncode -ne 0 ]; then
+  echo "go check failed"
+  exit 1
+fi
