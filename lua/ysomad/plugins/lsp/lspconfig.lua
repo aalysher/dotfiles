@@ -23,7 +23,7 @@ return {
       local builtin = require("telescope.builtin")
 
       opts.desc = "Show LSP references"
-      vim.keymap.set("n", "gR", builtin.lsp_references, opts) -- show definition, references
+      vim.keymap.set("n", "gr", builtin.lsp_references, opts) -- show definition, references
 
       opts.desc = "Go to declaration"
       vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- go to declaration
