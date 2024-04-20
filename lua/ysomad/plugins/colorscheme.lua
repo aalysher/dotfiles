@@ -1,8 +1,13 @@
 return {
-  'aktersnurra/no-clown-fiesta.nvim',
-  priority = 1000,
+  'rose-pine/neovim',
   config = function()
-    require("no-clown-fiesta").setup()
-    vim.cmd.colorscheme("no-clown-fiesta")
+    require("rose-pine").setup({
+      disable_background = true
+    })
+    color = color or "rose-pine"
+    vim.cmd.colorscheme(color)
+
+    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
   end
 }

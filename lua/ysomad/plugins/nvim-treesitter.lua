@@ -15,13 +15,14 @@ return {
         'lua',
         'python',
         'sql',
-        'javascript',
-        'typescript',
         'markdown',
         'markdown_inline'
       },
-      highlight = { enable = true },
-      indent = { enable = true },
+      highlight = {
+        enable = true,
+        additional_vim_regex_highlighting = false,
+      },
+      -- indent = { enable = true },
     })
   end
 }
