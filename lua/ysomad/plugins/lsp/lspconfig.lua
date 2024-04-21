@@ -46,6 +46,9 @@ return {
       opts.desc = "Show buffer diagnostics"
       vim.keymap.set("n", "<leader>D", builtin.diagnostics, opts) -- show  diagnostics for file
 
+      opts.desc = "Lsp diagnostic loclist"
+      vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, otps) -- lsp diagnostic loclist
+
       opts.desc = "Show line diagnostics"
       vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts) -- show diagnostics for line
 

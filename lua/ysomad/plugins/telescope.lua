@@ -56,3 +56,5 @@ return {
   --   vim.keymap.set('n', '<leader>fx', builtin.treesitter, { desc = "List tresitter funcs, vars"})
   end
 }
+
+

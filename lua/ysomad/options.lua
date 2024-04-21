@@ -25,8 +25,8 @@ opt.signcolumn = 'yes'
 opt.isfname:append('@-@')
 
 opt.updatetime = 50
-opt.colorcolumn = '120'
+opt.colorcolumn = '80'
 
 vim.g.mapleader = ' '
 vim.o.clipboard = "unnamedplus"
-
+vim.o.ignorecase = true
