@@ -12,6 +12,7 @@ map("n", "<C-k>", "<C-w>k", { desc = "Switch Window up" })
 map("n", "<Esc>", "<cmd>noh<CR>", { desc = "General Clear highlights" })
 
 -- terminal
+map("n", "<C-x>", "<C-\\><C-N>", { desc = "Terminal Escape terminal mode" })
 map("t", "<C-x>", "<C-\\><C-N>", { desc = "Terminal Escape terminal mode" })
 
 map("v", "K", ":m '<-2<CR>gv=gv")
