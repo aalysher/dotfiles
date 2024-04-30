@@ -1,0 +1,21 @@
+use apps:
+1. firefox
+2. neovim
+3. alacritty
+4. pass
+5. obsidian
+6. gpg
+7. git
+8. postman
+9. telegram
+10. go
+11. Goland
+12. obs studio
+13. htop
+14. tmux
+15. docker
+16. postgres
+17. rofi
+18. clipmenud
+19. scrot
+20. feh
