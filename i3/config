@@ -13,11 +13,11 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font pango:JetBrains Mono 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+# font pango:DejaVu Sans Mono 8
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -29,9 +29,8 @@ exec --no-startup-id dex --autostart --environment i3
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-exec --no-startup-id xss-lock --transfer-sleep-lock -- /home/aalysher/.config/i3status/i3lock_with_layout.sh
-bindsym $mod+Control+l exec /home/aalysher/.config/i3status/i3lock_with_layout.sh
-# exec "xautolock -detectsleep -time 3 -locker \"i3lock -c 000000\""
+exec --no-startup-id xss-lock --transfer-sleep-lock -- /home/aalysher/.config/i3/scripts/i3lock_with_layout.sh
+bindsym $mod+Control+l exec /home/aalysher/.config/i3/scripts/i3lock_with_layout.sh
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -39,13 +38,11 @@ exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-# bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +20% && $refresh_i3status
-# bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -20% && $refresh_i3status
-# bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer sset Master 10%+ && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer sset Master 10%- && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle && $refresh_i3status
+
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -60,8 +57,14 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start rofi (a program launcher)
-bindsym $mod+d exec bash ~/.config/i3status/rofi/launcher.sh
+# start dmenu (a program launcher)
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+# bindsym $mod+d exec --no-startup-id dmenu_run
+# A more modern dmenu replacement is rofi:
+# bindcode $mod+40 exec "rofi -modi drun,run -show drun"
+# There also is i3-dmenu-desktop which only displays applications shipping a
+# .desktop file. It is a wrapper around dmenu, so you need that installed.
+# bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+j focus left
@@ -187,51 +190,49 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-    status_command i3status -c /home/aalysher/.config/i3status/i3status.conf
+	status_command i3status -c /home/aalysher/.config/i3/i3status/i3status.conf
 }
+
+# Убрать рамки у окон
+# new_window pixel 1
+# new_float pixel 1
+for_window [class="^.*"] border pixel 2
+                          # class                 border  backgr. text    indicator child_border
+for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4   #285577
+
+
+# Раскладка клавиатуры
+exec_always --no-startup-id "setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle"
+
+# Скорость перемещения курсора в vim
+exec --no-startup-id xset r rate 190 50
+
+# clipboard manager clipmenu
+exec --no-startup-id clipmenud &
+# bindsym $mod+m exec --no-startup-id clipmenu
+bindsym $mod+m exec --no-startup-id clipmenu -i -fn Terminus:size=12 -nb '#002b36' -nf '#839496' -sb '#073642' -sf '#93a1a1'
 
 # wallpaper
 exec_always --no-startup-id feh --bg-scale /home/aalysher/Pictures/wallpaper/A.png
-
-# Раскладка клавиатуры
-exec --no-startup-id "setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle"
-
 
 # brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
-
 # Choise monitor
 bindsym XF86Display exec /home/aalysher/.config/scripts/dispay.sh
-
 
 # screeshot
 bindsym Print exec scrot /home/aalysher/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M-%S').png
 bindsym --release Shift+Print exec scrot -s /home/aalysher/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M-%S').png
 
-
-# Убрать рамки у окон
-new_window pixel 1
-new_float pixel 1
-
-# Скорость перемещения курсора в vim
-exec --no-startup-id xset r rate 180 50
-
 # Бинды для вызова приложений
 bindsym $mod + F1 exec --no-startup-id obsidian; exec firefox; exec --no-startup-id telegram-desktop;
-
-
-# clipboard manager clipmenu
-exec --no-startup-id clipmenud &
-bindsym $mod+m exec --no-startup-id clipmenu
-# bindsym $mod+m exec --no-startup-id clipmenu -i -fn Terminus:size=12 -nb '#002b36' -nf '#839496' -sb '#073642' -sf '#93a1a1'
-
-exec --no-startup-id network-manager-applet
-
 
 # Привязка к воркспейсам
 assign [class="obsidian"] $ws1
 assign [class="firefox"] $ws2
-assign [class="TelegramDesktop"] $ws8
+assign [class="TelegramDesktop"] $ws5
+
+exec_always --no-startup-id xinput set-prop "Synaptics TM3471-020" "libinput Natural Scrolling Enabled" 1
 
