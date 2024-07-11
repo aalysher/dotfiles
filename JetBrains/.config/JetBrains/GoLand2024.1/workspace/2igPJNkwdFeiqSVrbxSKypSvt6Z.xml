@@ -1,0 +1,247 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="backoffice-client" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="DatabaseView">
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="2dszsom4zfkdz" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]" selected="true">
+            <state split_layout="SHOW_PREVIEW" is_vertical_split="false">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/pages/Lobby/components/Editor.tsx">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="285">
+              <caret line="86" column="53" selection-start-line="86" selection-start-column="53" selection-end-line="86" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "TypeScript JSX": {
+      "usageCount": 11,
+      "lastUsed": 1720513328635
+    },
+    "JavaScript": {
+      "usageCount": 2,
+      "lastUsed": 1719990963883
+    },
+    "textmate": {
+      "usageCount": 2,
+      "lastUsed": 1719990963656
+    },
+    "Markdown": {
+      "usageCount": 9,
+      "lastUsed": 1720513329868
+    }
+  }
+}]]></component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>httpCli</find>
+      <find>localhost</find>
+      <find>editor.ts</find>
+      <find>no gam</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/services</dir>
+      <dir>$PROJECT_DIR$/src/pages/Lobby/components</dir>
+    </dirStrings>
+  </component>
+  <component name="FindInProjectScope">
+    <option name="isProjectScope" value="true" />
+  </component>
+  <component name="GitBranchesPopupTreeState">
+    <expand>
+      <path>
+        <item name="TreeRoot" type="41d8a9c2:GitBranchesTreeModel$TreeRoot" />
+        <item name="LOCAL" type="ae103dac:GitBranchType" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="GitSEFilterConfiguration">{}</component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/.env" />
+      <option value="$PROJECT_DIR$/src/pages/Lobby/components/Editor.tsx" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="JavaScript">
+      <summary usageCount="2" lastUsage="1719990963883" />
+    </language>
+    <language id="Markdown">
+      <summary usageCount="9" lastUsage="1720513329868" />
+    </language>
+    <language id="TypeScript JSX">
+      <summary usageCount="11" lastUsage="1720513328640" />
+    </language>
+    <language id="textmate">
+      <summary usageCount="2" lastUsage="1719990963656" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1" />
+    <panes />
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local">
+        <shellCommand>
+          <arg value="/usr/bin/zsh" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2413883" />
+      <window_info id="Commit" order="1" weight="0.2413883" />
+      <window_info id="Welcome to GitHub Copilot" order="2" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.33033174" />
+      <window_info anchor="bottom" id="Run" order="4" show_stripe_button="false" weight="0.5227488" />
+      <window_info anchor="bottom" id="Services" order="5" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.33011484" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="github.copilotToolWindow" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.25" />
+      <window_info anchor="right" id="GitHub Copilot Chat" order="6" />
+      <unified_weights bottom="0.5227488" left="0.2413883" right="0.33011484" />
+    </layoutV2>
+    <recentWindows>
+      <value>Run</value>
+      <value>Database</value>
+      <value>Project</value>
+      <value>Terminal</value>
+      <value>Commit</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="555" y="205" width="804" height="622" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1720513179287">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="555" y="205" width="804" height="622" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1720513179287" />
+    <state x="731" y="276" width="428" height="480" key="FileChooserDialogImpl" timestamp="1720513365335">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="731" y="276" width="428" height="480" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1720513365335" />
+    <state width="1834" height="509" key="GridCell.Tab.0.bottom" timestamp="1720195521743">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="509" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1720195521743" />
+    <state width="1834" height="509" key="GridCell.Tab.0.center" timestamp="1720195521743">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="509" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1720195521743" />
+    <state width="1834" height="509" key="GridCell.Tab.0.left" timestamp="1720195521743">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="509" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1720195521743" />
+    <state width="1834" height="509" key="GridCell.Tab.0.right" timestamp="1720195521743">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="509" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1720195521743" />
+    <state x="765" y="244" width="384" height="545" key="RollbackChangesDialog" timestamp="1719909185097">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="765" y="244" width="384" height="545" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1719909185097" />
+    <state x="693" y="226" width="528" height="580" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1719910729052">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="693" y="226" width="528" height="580" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1719910729052" />
+    <state x="749" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1719910869533">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="749" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1719910869533" />
+    <state x="415" y="218" width="1079" height="776" key="find.popup" timestamp="1719910837715">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="415" y="218" width="1079" height="776" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1719910837715" />
+    <state x="623" y="209" width="672" height="696" key="search.everywhere.popup" timestamp="1719909962790">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="209" width="672" height="696" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1719909962790" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/services/httpClient.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/Lobby/components/Lobby.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="114" column="24" lean-forward="true" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SHOW_PREVIEW" is_vertical_split="false">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/Lobby/components/Editor.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="86" column="53" selection-start-line="86" selection-start-column="53" selection-end-line="86" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

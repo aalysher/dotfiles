@@ -6,7 +6,7 @@ use apps:
 5. obsidian
 6. gpg
 7. git
-8. postman
+8. HTTPie
 9. telegram
 10. go
 11. Goland
@@ -15,7 +15,7 @@ use apps:
 14. tmux
 15. docker
 16. postgres
-17. rofi
+17. stow
 18. clipmenud
 19. scrot
 20. feh

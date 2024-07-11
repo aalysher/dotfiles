@@ -1,0 +1,16 @@
+<application>
+  <component name="vgo">
+    <environment>
+      <map>
+        <entry key="GOPRIVATE">
+          <value>
+            <list>
+              <option value="bitbucket.org/*" />
+              <option value="bitbucket.org/* " />
+            </list>
+          </value>
+        </entry>
+      </map>
+    </environment>
+  </component>
+</application>

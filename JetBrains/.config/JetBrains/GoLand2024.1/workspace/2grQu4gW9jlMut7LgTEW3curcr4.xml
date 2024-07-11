@@ -1,0 +1,292 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="admiral-wilds-server" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf ideFingerprint="2qvyi6zs3i0wl">
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/cmd/main.go">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="277">
+                  <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+                  <folding>
+                    <element signature="e#319#336#0" expanded="true" />
+                    <element signature="e#319#336#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/bitbucket.org/play-workspace/base-slot-server@v0.3.11/pkg/app/app.go">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="321">
+                  <caret line="105" selection-start-line="105" selection-end-line="105" />
+                  <folding>
+                    <element signature="e#3018#3041#0" expanded="true" />
+                    <element signature="e#3018#3041#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/bitbucket.org/play-workspace/base-slot-server@v0.3.11/pkg/kernel/services/simulator.go">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="667">
+                  <caret line="309" selection-start-line="309" selection-end-line="309" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config.yml">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="527">
+                  <caret line="42" selection-start-line="42" selection-end-line="42" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sim_results/admiral-wilds-96-medium-buy-bonus-true.xlsx">
+              <provider editor-type-id="scripted-data-editor" selected="true" />
+            </entry>
+          </file>
+          <file>
+            <entry file="file://$PROJECT_DIR$/sim_results/admiral-wilds-96-medium-buy-bonus-false.xlsx">
+              <provider editor-type-id="scripted-data-editor" selected="true" />
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf ideFingerprint="2qvyi6zs3i0wl">
+          <file>
+            <entry file="file://$PROJECT_DIR$/sim_results/admiral-wilds-96-medium-buy-bonus-false.xlsx">
+              <provider editor-type-id="scripted-data-editor" selected="true" />
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "Native": {
+      "usageCount": 7,
+      "lastUsed": 1716455815171
+    },
+    "Go": {
+      "usageCount": 3,
+      "lastUsed": 1716454838421
+    },
+    "YAML": {
+      "usageCount": 1,
+      "lastUsed": 1716455166056
+    }
+  }
+}]]></component>
+  <component name="GitSEFilterConfiguration"><![CDATA[{}]]></component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/config.yml" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="go">
+      <summary usageCount="3" lastUsage="1716454838421" />
+    </language>
+    <language id="yaml">
+      <summary usageCount="1" lastUsage="1716455166056" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="admiral-wilds-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/admiral-wilds/admiral-wilds-server}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admiral-wilds-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/admiral-wilds/admiral-wilds-server}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/admiral-wilds/admiral-wilds-server/cmd}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admiral-wilds-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/admiral-wilds/admiral-wilds-server}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/admiral-wilds/admiral-wilds-server/sim_results}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="Go Build.go build" />
+    </history>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local">
+        <shellCommand>
+          <arg value="/usr/bin/zsh" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2085073" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.33033174" />
+      <window_info anchor="bottom" id="Run" order="4" show_stripe_button="false" weight="0.33033174" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Debug" order="4" show_stripe_button="false" weight="0.33033174" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <unified_weights bottom="0.33033174" left="0.2085073" />
+    </layoutV2>
+    <recentWindows>
+      <value>Run</value>
+      <value>Project</value>
+      <value>Debug</value>
+      <value>Terminal</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="555" y="180" width="804" height="697" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1716453505250">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="555" y="180" width="804" height="697" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1716453505250" />
+    <state x="708" y="284" key="FileChooserDialogImpl" timestamp="1716458157782">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="708" y="284" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1716458157782" />
+    <state width="1834" height="306" key="GridCell.Tab.0.bottom" timestamp="1716458159799">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="306" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1716458159799" />
+    <state width="1834" height="306" key="GridCell.Tab.0.center" timestamp="1716458159799">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="306" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1716458159799" />
+    <state width="1834" height="306" key="GridCell.Tab.0.left" timestamp="1716458159799">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="306" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1716458159799" />
+    <state width="1834" height="306" key="GridCell.Tab.0.right" timestamp="1716458159799">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="306" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1716458159799" />
+    <state width="1834" height="306" key="GridCell.Tab.1.bottom" timestamp="1716458159800">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="306" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1716458159800" />
+    <state width="1834" height="306" key="GridCell.Tab.1.center" timestamp="1716458159799">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="306" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1716458159799" />
+    <state width="1834" height="306" key="GridCell.Tab.1.left" timestamp="1716458159799">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="306" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1716458159799" />
+    <state width="1834" height="306" key="GridCell.Tab.1.right" timestamp="1716458159799">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="306" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1716458159799" />
+    <state x="464" y="155" key="SettingsEditor" timestamp="1716453472874">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="464" y="155" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1716453472874" />
+    <state x="693" y="226" width="528" height="580" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1716453469924">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="693" y="226" width="528" height="580" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1716453469924" />
+    <state x="623" y="209" width="672" height="713" key="search.everywhere.popup" timestamp="1716455166003">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="209" width="672" height="713" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1716455166003" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/bitbucket.org/play-workspace/base-slot-server@v0.3.11/pkg/kernel/services/simulator.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sim_results/admiral-wilds-96-medium-2024-05-23-09-06-23.xlsx">
+      <provider selected="true" editor-type-id="scripted-data-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/bitbucket.org/play-workspace/base-slot-server@v0.3.11/pkg/app/app.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="e#3018#3041#0" expanded="true" />
+            <element signature="e#3018#3041#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="e#319#336#0" expanded="true" />
+            <element signature="e#319#336#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sim_results/false.xlsx">
+      <provider selected="true" editor-type-id="scripted-data-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sim_results/true.xlsx">
+      <provider selected="true" editor-type-id="scripted-data-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sim_results/admiral-wilds-96-medium-buy-bonus-true.xlsx">
+      <provider selected="true" editor-type-id="scripted-data-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sim_results/admiral-wilds-96-medium-buy-bonus-false.xlsx">
+      <provider selected="true" editor-type-id="scripted-data-editor" />
+    </entry>
+  </component>
+</project>

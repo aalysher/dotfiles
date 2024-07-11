@@ -1,0 +1,145 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="hello_world" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="34wo2g55t7x7k" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/main.go">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <folding>
+                <element signature="e#14#31#0" expanded="true" />
+                <element signature="n#!!block;n#main#1" expanded="true" />
+                <element signature="n#!!block;n#main#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "Go": {
+      "usageCount": 3,
+      "lastUsed": 1719037149800
+    }
+  }
+}]]></component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/main.go" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="go">
+      <summary usageCount="3" lastUsage="1719037149803" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="hello_world" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/aalysher/go/src/hello_world}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="Go Build.go build hello_world" />
+    </history>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.17233264" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Welcome to GitHub Copilot" order="2" weight="0.33011484" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Run" order="4" show_stripe_button="false" weight="0.32962245" />
+      <window_info anchor="bottom" id="Services" order="5" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="github.copilotToolWindow" order="4" weight="0.33011484" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.25" />
+      <window_info anchor="right" id="GitHub Copilot Chat" order="6" weight="0.32959288" />
+      <unified_weights bottom="0.32962245" left="0.33011484" right="0.32959288" />
+    </layoutV2>
+    <recentWindows>
+      <value>GitHub Copilot Chat</value>
+      <value>github.copilotToolWindow</value>
+      <value>Welcome to GitHub Copilot</value>
+      <value>Run</value>
+      <value>Project</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="750" y="124" width="410" height="763" key="#GOPATH" timestamp="1719036779633">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="750" y="124" width="410" height="763" key="#GOPATH/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1719036779633" />
+    <state width="1830" height="298" key="GridCell.Tab.0.bottom" timestamp="1719036972152">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1830" height="298" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1719036972152" />
+    <state width="1830" height="298" key="GridCell.Tab.0.center" timestamp="1719036972152">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1830" height="298" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1719036972152" />
+    <state width="1830" height="298" key="GridCell.Tab.0.left" timestamp="1719036972152">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1830" height="298" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1719036972152" />
+    <state width="1830" height="298" key="GridCell.Tab.0.right" timestamp="1719036972152">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1830" height="298" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1719036972152" />
+    <state x="462" y="144" key="SettingsEditor" timestamp="1719036972144">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="462" y="144" key="SettingsEditor/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1719036972144" />
+    <state x="620" y="227" key="run.anything.popup" timestamp="1719036834721">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="620" y="227" key="run.anything.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1719036834721" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#14#31#0" expanded="true" />
+            <element signature="n#!!block;n#main#1" expanded="true" />
+            <element signature="n#!!block;n#main#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

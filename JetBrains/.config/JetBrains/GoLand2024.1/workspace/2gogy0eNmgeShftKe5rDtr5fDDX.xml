@@ -1,0 +1,433 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="lucky-skulls-bonanza-server" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="2rhf1m7i9yq9p" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.yml">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="1428">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/engine/factory.go">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="2072">
+              <caret line="90" column="25" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmd/main.go">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="252">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding>
+                <element signature="e#285#302#0" expanded="true" />
+                <element signature="e#285#302#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/bitbucket.org/play-workspace/base-slot-server@v0.3.6/pkg/app/app.go">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="887">
+              <caret line="113" selection-start-line="113" selection-end-line="113" />
+              <folding>
+                <element signature="e#3018#3041#0" expanded="true" />
+                <element signature="e#3018#3041#0" expanded="true" />
+                <element signature="e#3153#3215#0" expanded="true" />
+                <element signature="e#3153#3215#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/bitbucket.org/play-workspace/base-slot-server@v0.3.6/pkg/kernel/config/config.go">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="1400">
+              <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+              <folding>
+                <element signature="e#2641#2663#0" expanded="true" />
+                <element signature="e#2641#2663#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/bitbucket.org/play-workspace/base-slot-server@v0.3.6/pkg/kernel/constants/di.go">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="1036">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/bitbucket.org/play-workspace/base-slot-server@v0.3.6/pkg/kernel/services/simulator.go">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="1148">
+              <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/bitbucket.org/play-workspace/base-slot-server@v0.3.6/pkg/kernel/engine/interface.go">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="1652">
+              <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/github.com/sarulabs/di@v2.0.0+incompatible/containerInterface.go">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="1204">
+              <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/github.com/sarulabs/di@v2.0.0+incompatible/container.go">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="868">
+              <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+              <folding>
+                <element signature="n#!!block;n#Get#0" expanded="true" />
+                <element signature="n#!!block;n#Get#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "Dockerfile": {
+      "usageCount": 3,
+      "lastUsed": 1716395963264
+    },
+    "go.mod": {
+      "usageCount": 3,
+      "lastUsed": 1716395962364
+    },
+    "Go": {
+      "usageCount": 38,
+      "lastUsed": 1717061450866
+    },
+    "textmate": {
+      "usageCount": 4,
+      "lastUsed": 1716402131510
+    },
+    "YAML": {
+      "usageCount": 4,
+      "lastUsed": 1717061449655
+    }
+  }
+}]]></component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ante</find>
+      <find>main</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/engine</dir>
+    </dirStrings>
+  </component>
+  <component name="FindInProjectScope">
+    <option name="isProjectScope" value="true" />
+  </component>
+  <component name="GitSEFilterConfiguration">{}</component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/go.mod" />
+      <option value="$PROJECT_DIR$/cmd/main.go" />
+      <option value="$PROJECT_DIR$/../../../../pkg/mod/bitbucket.org/play-workspace/base-slot-server@v0.3.6/pkg/kernel/engine/interface.go" />
+      <option value="$USER_HOME$/.ideavimrc" />
+      <option value="$PROJECT_DIR$/config.yml" />
+      <option value="$PROJECT_DIR$/engine/factory.go" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="Dockerfile">
+      <summary usageCount="3" lastUsage="1716395963264" />
+    </language>
+    <language id="go">
+      <summary usageCount="38" lastUsage="1717061450866" />
+    </language>
+    <language id="textmate">
+      <summary usageCount="4" lastUsage="1716402131510" />
+    </language>
+    <language id="vgo">
+      <summary usageCount="3" lastUsage="1716395962367" />
+    </language>
+    <language id="yaml">
+      <summary usageCount="4" lastUsage="1717061449655" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1" />
+    <panes />
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="Go Build.go build" />
+    </history>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local">
+        <shellCommand>
+          <arg value="/usr/bin/zsh" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18449897" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.3293839" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.3293839" />
+      <window_info anchor="bottom" id="Services" order="5" />
+      <window_info anchor="bottom" id="Debug" order="6" show_stripe_button="false" weight="0.3293839" />
+      <window_info anchor="right" id="Notifications" order="0" weight="0.32959288" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.3297706" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <unified_weights bottom="0.3293839" left="0.18449897" right="0.32959288" />
+    </layoutV2>
+    <recentWindows>
+      <value>Debug</value>
+      <value>Terminal</value>
+      <value>Run</value>
+      <value>Project</value>
+      <value>Notifications</value>
+      <value>AIAssistant</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="555" y="183" width="802" height="668" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1716375664731">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="555" y="183" width="802" height="668" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1716375664731" />
+    <state x="657" y="273" width="428" height="480" key="FileChooserDialogImpl" timestamp="1717061478286">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="657" y="273" width="428" height="480" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1717061478286" />
+    <state width="1834" height="305" key="GridCell.Tab.0.bottom" timestamp="1716876888014">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="305" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1716876888014" />
+    <state width="1834" height="305" key="GridCell.Tab.0.center" timestamp="1716876888013">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="305" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1716876888013" />
+    <state width="1834" height="305" key="GridCell.Tab.0.left" timestamp="1716876888013">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="305" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1716876888013" />
+    <state width="1834" height="305" key="GridCell.Tab.0.right" timestamp="1716876888013">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="305" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1716876888013" />
+    <state width="1834" height="305" key="GridCell.Tab.1.bottom" timestamp="1716876888014">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="305" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1716876888014" />
+    <state width="1834" height="305" key="GridCell.Tab.1.center" timestamp="1716876888014">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="305" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1716876888014" />
+    <state width="1834" height="305" key="GridCell.Tab.1.left" timestamp="1716876888014">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="305" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1716876888014" />
+    <state width="1834" height="305" key="GridCell.Tab.1.right" timestamp="1716876888014">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="305" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1716876888014" />
+    <state x="464" y="158" key="SettingsEditor" timestamp="1716799825831">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="464" y="158" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1716799825831" />
+    <state x="693" y="229" width="526" height="575" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1716402586490">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="693" y="229" width="526" height="575" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1716402586490" />
+    <state x="728" y="157" width="649" height="864" key="find.popup" timestamp="1716796546862">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="728" y="157" width="649" height="864" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1716796546862" />
+    <state x="623" y="209" width="672" height="713" key="search.everywhere.popup" timestamp="1716402879727">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="209" width="672" height="713" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1716402879727" />
+    <state x="685" y="425" width="544" height="183" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1716399637114">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="685" y="425" width="544" height="183" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1716399637114" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.ideavimrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/features.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/volatility/high/static.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/metrics.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/bitbucket.org/play-workspace/base-slot-server@v0.3.6/pkg/kernel/engine/utils/rng.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/factory.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2072">
+          <caret line="90" column="25" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="e#285#302#0" expanded="true" />
+            <element signature="e#285#302#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/bitbucket.org/play-workspace/base-slot-server@v0.3.6/pkg/kernel/config/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+          <folding>
+            <element signature="e#2641#2663#0" expanded="true" />
+            <element signature="e#2641#2663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/bitbucket.org/play-workspace/base-slot-server@v0.3.6/pkg/kernel/constants/di.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1036">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/bitbucket.org/play-workspace/base-slot-server@v0.3.6/pkg/kernel/services/simulator.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1148">
+          <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/bitbucket.org/play-workspace/base-slot-server@v0.3.6/pkg/kernel/engine/interface.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1652">
+          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/github.com/sarulabs/di@v2.0.0+incompatible/containerInterface.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1204">
+          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/github.com/sarulabs/di@v2.0.0+incompatible/container.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="868">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!block;n#Get#0" expanded="true" />
+            <element signature="n#!!block;n#Get#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/bitbucket.org/play-workspace/base-slot-server@v0.3.6/pkg/app/app.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="887">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+          <folding>
+            <element signature="e#3018#3041#0" expanded="true" />
+            <element signature="e#3018#3041#0" expanded="true" />
+            <element signature="e#3153#3215#0" expanded="true" />
+            <element signature="e#3153#3215#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

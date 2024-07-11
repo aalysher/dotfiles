@@ -1,0 +1,748 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="bet-overlord-service" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="DatabaseView">
+    <expand>
+      <path>
+        <item name="Root Group" type="25e4ec8d:DvRootDsGroup" />
+        <item name="postgres@dev: DSN" type="27e358d6:DataSourceNode" />
+      </path>
+      <path>
+        <item name="Root Group" type="25e4ec8d:DvRootDsGroup" />
+        <item name="postgres@dev: DSN" type="27e358d6:DataSourceNode" />
+        <item name="overlord: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Root Group" type="25e4ec8d:DvRootDsGroup" />
+        <item name="postgres@dev: DSN" type="27e358d6:DataSourceNode" />
+        <item name="overlord: database" type="162271b6:PgImplModel$Database" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Root Group" type="25e4ec8d:DvRootDsGroup" />
+        <item name="postgres@dev: DSN" type="27e358d6:DataSourceNode" />
+        <item name="overlord: database" type="162271b6:PgImplModel$Database" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="Family of 7 table (host: schema public)" type="28178dcc:BaseModel$BaseNamingIdentifyingFamily" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="1tqn5tbxzzyco" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmd/main.go">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="504">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="e#908#933#0" expanded="true" />
+                <element signature="e#908#933#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/internal/transport/rpc/handler-integrator.go">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="672">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="das://63f83423-f370-458c-8a1f-c17e82ee40c6/database/overlord/schema/public/table/bf_integrator_data">
+          <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider" selected="true">
+            <state lastOpenedTimestamp="1720701921295" presentationMode="TABLE" projectRestartId="b84f3354-860f-4949-9adc-85b8b0c3c3d6" pageSize="500">
+              <filtering>
+                <filter text="" />
+              </filtering>
+              <sorting>
+                <sort text="" />
+              </sorting>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="das://63f83423-f370-458c-8a1f-c17e82ee40c6/database/overlord/schema/public/table/currency_config">
+          <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider" selected="true">
+            <state lastOpenedTimestamp="1720701942006" presentationMode="TABLE" projectRestartId="b84f3354-860f-4949-9adc-85b8b0c3c3d6" pageSize="500">
+              <filtering>
+                <filter text="" />
+              </filtering>
+              <sorting>
+                <sort text="" />
+              </sorting>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="das://63f83423-f370-458c-8a1f-c17e82ee40c6/database/overlord/schema/public/table/users">
+          <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider" selected="true">
+            <state lastOpenedTimestamp="1720703850767" presentationMode="TABLE" projectRestartId="b84f3354-860f-4949-9adc-85b8b0c3c3d6" pageSize="500">
+              <filtering>
+                <filter text="" />
+              </filtering>
+              <sorting>
+                <sort text="" />
+              </sorting>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="das://63f83423-f370-458c-8a1f-c17e82ee40c6/database/overlord/schema/public/table/params_per_user_for_integrator">
+          <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider" selected="true">
+            <state lastOpenedTimestamp="1720703856144" presentationMode="TABLE" projectRestartId="b84f3354-860f-4949-9adc-85b8b0c3c3d6" pageSize="500">
+              <filtering>
+                <filter text="" />
+              </filtering>
+              <sorting>
+                <sort text="" />
+              </sorting>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file>
+        <entry file="das://63f83423-f370-458c-8a1f-c17e82ee40c6/database/overlord/schema/public/table/params_per_user_for_integrator.sql">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="196">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="das://63f83423-f370-458c-8a1f-c17e82ee40c6/database/overlord/schema/public/table/free_bets">
+          <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider" selected="true">
+            <state lastOpenedTimestamp="1720701959048" presentationMode="TABLE" projectRestartId="b84f3354-860f-4949-9adc-85b8b0c3c3d6" pageSize="500">
+              <filtering>
+                <filter text="" />
+              </filtering>
+              <sorting>
+                <sort text="" />
+              </sorting>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/internal/transport/http/handler.go">
+          <provider editor-type-id="text-editor" selected="true" />
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/internal/transport/http/handlers/meta.go">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="751">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "Go": {
+      "usageCount": 49,
+      "lastUsed": 1720701891204
+    },
+    "YAML": {
+      "usageCount": 37,
+      "lastUsed": 1720699988474
+    },
+    "SQL": {
+      "usageCount": 3,
+      "lastUsed": 1720704567643
+    },
+    "Database Element": {
+      "usageCount": 100,
+      "lastUsed": 1720703856261
+    }
+  }
+}]]></component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find />
+      <find>Waiting</find>
+      <find>backoffi</find>
+      <find>InitUserState</find>
+      <find>Internal</find>
+      <find>Service is</find>
+      <find>can not</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/tests</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/internal/services</dir>
+    </dirStrings>
+  </component>
+  <component name="FindInProjectScope">
+    <option name="isProjectScope" value="true" />
+  </component>
+  <component name="GitSEFilterConfiguration">{}</component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/tests/prepare_test.go" />
+      <option value="$PROJECT_DIR$/docker-compose.yml" />
+      <option value="$PROJECT_DIR$/config.yml" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="SQL">
+      <summary usageCount="3" lastUsage="1720704567643" />
+    </language>
+    <language id="go">
+      <summary usageCount="49" lastUsage="1720701891204" />
+    </language>
+    <language id="yaml">
+      <summary usageCount="37" lastUsage="1720699988474" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bet-overlord-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bet-overlord-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service/cmd}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bet-overlord-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service/internal}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bet-overlord-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service/internal}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service/internal/transport}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bet-overlord-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service/internal}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service/internal/transport}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service/internal/transport/http}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bet-overlord-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service/internal}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service/internal/transport}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service/internal/transport/http}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service/internal/transport/http/handlers}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bet-overlord-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service/internal}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service/internal/transport}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/aalysher/go/src/loberta/bet-overlord-service/internal/transport/rpc}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <option name="allConfigurationsExpanded" value="true" />
+    <history>
+      <element setting="Go Build.go build" />
+      <element setting="Shell Script.Port-Forward RNG" />
+      <element setting="Shell Script.Port-Forward History" />
+      <element setting="Shell Script.Port-Forward RabbitMQ" />
+      <element setting="Shell Script.Port-Forward Backoffice" />
+      <element setting="Shell Script.Port-Forward Postgres" />
+      <element setting="Compound.Run all scripts" />
+    </history>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="com.intellij.docker.runtimes.DockerServerRuntime@a3ca860f" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Database" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Database" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="postgres@dev: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Database" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="postgres@dev: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="{}" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Database" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="postgres@dev: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="{}" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Database" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="postgres@dev: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="{}" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Database" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="postgres@dev: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="{}" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Database" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="postgres@dev: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="{}" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+        <serviceView id="admin@dev-daplay [overlord]">
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="com.intellij.kubernetes.view.KubernetesContextServiceViewContributor@f9189ffd" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+          <option name="viewType" value="services" />
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Port-Forward Backoffice" currentWorkingDirectory="$PROJECT_DIR$">
+        <shellCommand>
+          <arg value="/usr/bin/zsh" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+      <TerminalTabState tabName="Port-Forward RabbitMQ" currentWorkingDirectory="$PROJECT_DIR$">
+        <shellCommand>
+          <arg value="/usr/bin/zsh" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+      <TerminalTabState tabName="Port-Forward History" currentWorkingDirectory="$PROJECT_DIR$">
+        <shellCommand>
+          <arg value="/usr/bin/zsh" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+      <TerminalTabState tabName="Port-Forward RNG" currentWorkingDirectory="$PROJECT_DIR$">
+        <shellCommand>
+          <arg value="/usr/bin/zsh" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19232777" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Welcome to GitHub Copilot" order="2" weight="0.19232777" />
+      <window_info id="Bookmarks" order="3" side_tool="true" weight="0.19232777" />
+      <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.3748815" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.3748815" />
+      <window_info anchor="bottom" id="Services" order="5" weight="0.3748815" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.33033174" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.4057933" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="github.copilotToolWindow" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.25" />
+      <window_info anchor="right" id="GitHub Copilot Chat" order="6" weight="0.460595" />
+      <window_info active="true" anchor="right" id="Developer Tools" order="6" side_tool="true" visible="true" weight="0.4057933" />
+      <unified_weights bottom="0.3748815" left="0.19232777" right="0.4057933" />
+    </layoutV2>
+    <recentWindows>
+      <value>Developer Tools</value>
+      <value>Database</value>
+      <value>Project</value>
+      <value>Terminal</value>
+      <value>Run</value>
+      <value>Services</value>
+      <value>GitHub Copilot Chat</value>
+      <value>Find</value>
+      <value>Bookmarks</value>
+      <value>Welcome to GitHub Copilot</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="755" y="449" key="#GOROOT" timestamp="1719345909411">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="755" y="449" key="#GOROOT/0.0.1920.1080@0.0.1920.1080" timestamp="1719345909411" />
+    <state x="552" y="260" width="804" height="673" key="#Run/Debug_Configuration_Templates" timestamp="1720694243908">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="260" width="804" height="673" key="#Run/Debug_Configuration_Templates/0.0.1920.1080@0.0.1920.1080" timestamp="1720694243908" />
+    <state x="555" y="180" width="804" height="841" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1720703658430">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="555" y="180" width="804" height="841" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1720703658430" />
+    <state x="555" y="205" width="804" height="622" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1719573748382">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="555" y="205" width="804" height="622" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1719573748382" />
+    <state x="693" y="268" width="528" height="497" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1720612351279">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="693" y="268" width="528" height="497" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1720612351279" />
+    <state x="560" y="120" width="800" height="800" key="DbImportDialog" timestamp="1720454554266">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="560" y="120" width="800" height="800" key="DbImportDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1720454554266" />
+    <state x="740" y="272" width="453" height="480" key="FileChooserDialogImpl" timestamp="1720694019384">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="272" width="453" height="480" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1720694019384" />
+    <state width="1834" height="353" key="GridCell.Tab.0.bottom" timestamp="1720701839118">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="353" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1720701839118" />
+    <state width="1834" height="353" key="GridCell.Tab.0.center" timestamp="1720701839118">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="353" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1720701839118" />
+    <state width="1834" height="353" key="GridCell.Tab.0.left" timestamp="1720701839117">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="353" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1720701839117" />
+    <state width="1834" height="353" key="GridCell.Tab.0.right" timestamp="1720701839118">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1834" height="353" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1720701839118" />
+    <state width="278" height="577" key="HiddenNamespacesPopup" timestamp="1720620280053">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="278" height="577" key="HiddenNamespacesPopup/0.0.1920.1080@0.0.1920.1080" timestamp="1720620280053" />
+    <state x="464" y="155" key="SettingsEditor" timestamp="1720702984969">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="464" y="155" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1720702984969" />
+    <state width="220" height="600" key="ToolWindowDeveloperToolContentPanel" timestamp="1720703392561">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="220" height="600" key="ToolWindowDeveloperToolContentPanel/0.0.1920.1080@0.0.1920.1080" timestamp="1720703392561" />
+    <state x="693" y="226" width="528" height="580" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1720617250037">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="693" y="226" width="528" height="580" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1720617250037" />
+    <state x="960" y="-18" width="960" height="1077" key="dock-window-1" timestamp="1720692473415">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="960" y="-18" width="960" height="1077" key="dock-window-1/0.0.1920.1080@0.0.1920.1080" timestamp="1720692473415" />
+    <state x="293" y="193" width="1326" height="841" key="find.popup" timestamp="1720624779915">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="293" y="193" width="1326" height="841" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1720624779915" />
+    <state x="623" y="209" width="672" height="713" key="search.everywhere.popup" timestamp="1720699988445">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="209" width="672" height="713" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1720699988445" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tests/prepare_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
+          <folding>
+            <element signature="e#15#202#0" expanded="true" />
+            <element signature="e#928#951#0" expanded="true" />
+            <element signature="e#928#951#0" expanded="true" />
+            <element signature="e#1245#1267#0" expanded="true" />
+            <element signature="e#1245#1267#0" expanded="true" />
+            <element signature="e#1392#1414#0" expanded="true" />
+            <element signature="e#1392#1414#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/atomic_bet_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+          <folding>
+            <element signature="e#15#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/errs.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/rand.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#15#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/terminate.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dfe81dc9-35af-4f9d-9832-f634639843bc/console.sql" />
+    <entry file="das://dfe81dc9-35af-4f9d-9832-f634639843bc/database/overlord_db/schema/public/table/goose_db_version" />
+    <entry file="das://dfe81dc9-35af-4f9d-9832-f634639843bc/database/overlord_db/schema/public/table/currency_config" />
+    <entry file="das://dfe81dc9-35af-4f9d-9832-f634639843bc/database/overlord_db/schema/public/table/free_bets" />
+    <entry file="das://dfe81dc9-35af-4f9d-9832-f634639843bc/database/overlord_db/schema/public/table/users" />
+    <entry file="das://dfe81dc9-35af-4f9d-9832-f634639843bc/database/overlord_db/schema/public/table/transactions" />
+    <entry file="das://dfe81dc9-35af-4f9d-9832-f634639843bc/database/overlord_db/schema/public/table/params_per_user_for_integrator" />
+    <entry file="das://dfe81dc9-35af-4f9d-9832-f634639843bc/database/overlord_db/schema/public/table/bf_integrator_data" />
+    <entry file="file://$PROJECT_DIR$/../../../pkg/mod/github.com/sarulabs/di@v2.0.0+incompatible/container.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!block;n#Get#0" expanded="true" />
+            <element signature="n#!!block;n#Get#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/63f83423-f370-458c-8a1f-c17e82ee40c6/console.sql" />
+    <entry file="file://$PROJECT_DIR$/config.example.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://63f83423-f370-458c-8a1f-c17e82ee40c6/database/history/schema/public/table/spins">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state lastOpenedTimestamp="1720692484473" presentationMode="TABLE" projectRestartId="b84f3354-860f-4949-9adc-85b8b0c3c3d6" pageSize="500">
+          <filtering>
+            <filter text="" />
+          </filtering>
+          <sorting>
+            <sort text="created_at desc" />
+            <sort text="" />
+          </sorting>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/api/main.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2940">
+          <caret line="124" column="5" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/services/currency_config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="98" column="9" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
+          <folding>
+            <element signature="e#2825#2844#0" expanded="true" />
+            <element signature="e#2825#2844#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/kubernetes/default_pod/versions-monitor-7bdbfd859d-gg2nw.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/kubernetes/default_pod/reflector-6dccc8558b-zxlpn.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3533" />
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/kubernetes/namespace/launch.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/kubernetes/namespace/rng.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/kubernetes/namespace/overlord.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/kubernetes/storageclass/scw-bssd-retain.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/kubernetes/overlord_service/overlord.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/kubernetes/default_service/kubernetes.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/kubernetes/default_service/versions-monitor.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.kube/config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#908#933#0" expanded="true" />
+            <element signature="e#908#933#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/transport/http/handler.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/transport/http/handlers/meta.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="751">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/transport/rpc/handler-integrator.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://63f83423-f370-458c-8a1f-c17e82ee40c6/database/overlord/schema/public/table/bf_integrator_data">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state lastOpenedTimestamp="1720701921295" presentationMode="TABLE" projectRestartId="b84f3354-860f-4949-9adc-85b8b0c3c3d6" pageSize="500">
+          <filtering>
+            <filter text="" />
+          </filtering>
+          <sorting>
+            <sort text="" />
+          </sorting>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://63f83423-f370-458c-8a1f-c17e82ee40c6/database/overlord/schema/public/table/free_bets">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state lastOpenedTimestamp="1720701959048" presentationMode="TABLE" projectRestartId="b84f3354-860f-4949-9adc-85b8b0c3c3d6" pageSize="500">
+          <filtering>
+            <filter text="" />
+          </filtering>
+          <sorting>
+            <sort text="" />
+          </sorting>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://63f83423-f370-458c-8a1f-c17e82ee40c6/database/overlord/schema/public/table/currency_config">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state lastOpenedTimestamp="1720701942006" presentationMode="TABLE" projectRestartId="b84f3354-860f-4949-9adc-85b8b0c3c3d6" pageSize="500">
+          <filtering>
+            <filter text="" />
+          </filtering>
+          <sorting>
+            <sort text="" />
+          </sorting>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://63f83423-f370-458c-8a1f-c17e82ee40c6/database/overlord/schema/public/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state lastOpenedTimestamp="1720703850767" presentationMode="TABLE" projectRestartId="b84f3354-860f-4949-9adc-85b8b0c3c3d6" pageSize="500">
+          <filtering>
+            <filter text="" />
+          </filtering>
+          <sorting>
+            <sort text="" />
+          </sorting>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://63f83423-f370-458c-8a1f-c17e82ee40c6/database/overlord/schema/public/table/params_per_user_for_integrator">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state lastOpenedTimestamp="1720703856144" presentationMode="TABLE" projectRestartId="b84f3354-860f-4949-9adc-85b8b0c3c3d6" pageSize="500">
+          <filtering>
+            <filter text="" />
+          </filtering>
+          <sorting>
+            <sort text="" />
+          </sorting>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://63f83423-f370-458c-8a1f-c17e82ee40c6/database/overlord/schema/public/table/params_per_user_for_integrator.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
