@@ -1,0 +1,139 @@
+<application>
+  <component name="ActionHistoryManager">
+    <ids>
+      <option value="ToggleBookmarkK" />
+    </ids>
+  </component>
+  <component name="FileEditorProviderManager">{
+  &quot;selectedProviders&quot;: {
+    &quot;text-editor,scripted-data-editor&quot;: &quot;text-editor&quot;
+  }
+}</component>
+  <component name="LangManager">
+    <option name="languageName" value="go" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontSize" value="15.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "BLOCK_TERMINAL_LAST_USED_DATE": "1720693915",
+    "BLOCK_TERMINAL_LAST_USED_VERSION": "241.17011.92",
+    "EXPORTABILITY_SORTER.file.structure.state": "true",
+    "ExpandBeforeRunStepsPanel": "false",
+    "InstalledPluginsSearchHistory": "id\nide\nidea\nideav\nideavi",
+    "KEYMAP": "terminal\ntermin\ntermi\ngo to im",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "1",
+    "LAST_EXTRACTOR_SCRIPTS_CLEANUP_VERSION/data/aggregators": "GO-241.17011.92",
+    "LAST_EXTRACTOR_SCRIPTS_CLEANUP_VERSION/data/extractors": "GO-241.17011.92",
+    "LayoutCode.codeCleanup": "true",
+    "LayoutCode.optimizeImports": "true",
+    "MarketplacePluginsSearchHistory": "deve\ncop\nnerdtree\nnerd\nner",
+    "RunOnceActivity.go.code.vision.default.position.was.set": "true",
+    "RunOnceActivity.go.enabled.exportability.sorter": "true",
+    "RunOnceActivity.go.init.cfg.2": "true",
+    "RunOnceActivity.go.init.cfg.line.markers": "true",
+    "RunOnceActivity.go.libraries.notification.had.been.shown": "true",
+    "RunOnceActivity.go.optimizeImportsByDefault": "true",
+    "RunOnceActivity.go.suggest.all.rc.was.enabled.once": "true",
+    "RunOnceActivity.go.tips.were.enabled.once": "true",
+    "RunOnceActivity.llm.installer.activate.toolwindow": "true",
+    "RunOnceActivity.terminal.shell.command.handling.was.disabled.once": "true",
+    "SettingsSearchHistory": "recent configuration",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "com.intellij.kubernetes.view.ui.settings.KubernetesPodShellSettingsPanel.shellCommand": "",
+    "enter_selection_count": "5",
+    "evlsprt.241": "18f97290900",
+    "evlsprt3.241": "7",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.version": "241.17011.92",
+    "experimentalFeature.terminal.shell.command.handling": "false",
+    "fileTypeChangedCounter": "1",
+    "fontSizeToResetConsole": "13.0",
+    "fontSizeToResetEditor": "13.0",
+    "go.first.run.time": "1716320711367",
+    "got.it.tooltip.copilot.inlayGotIt": "1",
+    "got.it.tooltip.copilot.inlayPartialGotIt": "1",
+    "got.it.tooltip.database.schema.control.got.it": "1",
+    "got.it.tooltip.new.terminal.promotion": "1",
+    "got.it.tooltip.reader.mode.got.it": "1",
+    "got.it.tooltip.show.diff.in.editor": "1",
+    "got.it.tooltip.speed.search.shown": "1",
+    "gotit.previous.run": "GO-241.17011.92",
+    "ide.memory.adjusted": "true",
+    "ideavim.statistics.timestamp": "1720699986434",
+    "input.method.disabler.muted": "true",
+    "last_opened_file_path": "/usr/local/go",
+    "llm.installer.last.toolwindow.state": "LLM_INSTALLER",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "org.jetbrains.plugins.go.LAST_UPDATE": "1720701854786",
+    "org.jetbrains.plugins.go.LAST_VERSION": "241.17011.92",
+    "previousColorScheme": "_@user_Dark",
+    "registry.to.advanced.settings.migration.build": "GO-241.17011.92",
+    "ts.lib.d.ts.version": "5.4.3"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/aalysher",
+      "/home/aalysher/go/src/loberta/kubeconfig-dev_daplay.yaml",
+      "/home/aalysher/go/src/loberta/bet-overlord-service",
+      "/home/aalysher/go/src/loberta/history-service",
+      "/home/aalysher/go/src/loberta/backoffice/backoffice-client",
+      "/home/aalysher/go/src/loberta/bet-overlord-service/cmd",
+      "/home/aalysher/go/src/hello_world",
+      "/home/aalysher/go/src/loberta/lucky-santa-bonanza/lucky-santa-bonanza-client",
+      "/usr/local/go",
+      "/home/aalysher/go/src/loberta/backoffice/backoffice-server",
+      "/home/aalysher/go/src/loberta/backoffice-server/cmd/backoffice",
+      "/home/aalysher/go/src/loberta/backoffice-server",
+      "/home/aalysher/go/src/users/cmd",
+      "/home/aalysher/go/src/users",
+      "/home/aalysher/go/src/loberta/lucky-santa-bonanza/lucky-santa-bonanza-server/cmd",
+      "/home/aalysher/go/src/loberta/lucky-santa-bonanza/lucky-santa-bonanza-server",
+      "/home/aalysher/go/src/loberta/admiral-wilds/admiral-wilds-server/cmd",
+      "/home/aalysher/go/src/loberta/admiral-wilds/admiral-wilds-server",
+      "/home/aalysher/go/src/loberta/admiral-wilds",
+      "/home/aalysher/go/src/loberta/lucky-skulls-bonanza/lucky-skulls-bonanza-server/cmd",
+      "/home/aalysher/go/src/loberta/lucky-skulls-bonanza/lucky-skulls-bonanza-server"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.goide.execution.testing.frameworks.gofuzz.corpus.GoFuzzCorpusFileTypeDetector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector",
+      "com.intellij.database.vfs.DbStorageFileType$Detector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+  <component name="ShownTips">{
+  &quot;shownTips&quot;: {
+    &quot;CompleteWithTab&quot;: 1718782949829,
+    &quot;LiveTemplates&quot;: 1718957593645,
+    &quot;CtrlW&quot;: 1718612609443,
+    &quot;SpeedSearch&quot;: 1717061456443,
+    &quot;RecentFiles&quot;: 1718866997532,
+    &quot;ShowUsages&quot;: 1718730415608,
+    &quot;local_history&quot;: 1719141577990,
+    &quot;SelectIn&quot;: 1719036665208,
+    &quot;LayoutCode&quot;: 1719345900024,
+    &quot;find_usages&quot;: 1719573731178,
+    &quot;CompleteStatement&quot;: 1719322791259
+  },
+  &quot;proposedTips&quot;: {
+    &quot;CompleteWithTab&quot;: 1718782949808,
+    &quot;LiveTemplates&quot;: 1718957593336,
+    &quot;CtrlW&quot;: 1718612609335,
+    &quot;SpeedSearch&quot;: 1717061456270,
+    &quot;RecentFiles&quot;: 1718866997381,
+    &quot;ShowUsages&quot;: 1718730415458,
+    &quot;local_history&quot;: 1719141577909,
+    &quot;SelectIn&quot;: 1719036665100,
+    &quot;LayoutCode&quot;: 1719345899998,
+    &quot;find_usages&quot;: 1719573731083,
+    &quot;CompleteStatement&quot;: 1719322791108
+  },
+  &quot;tipsOrderSeed&quot;: 1716647896410
+}</component>
+</application>

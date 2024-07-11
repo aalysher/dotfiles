@@ -1,0 +1,114 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2024-02-13T15:06:22Z"
+  generateName: versions-monitor-7bdbfd859d-
+  labels:
+    app: versions-monitor
+    pod-template-hash: 7bdbfd859d
+  name: versions-monitor-7bdbfd859d-gg2nw
+  namespace: default
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: versions-monitor-7bdbfd859d
+    uid: c173a842-136e-4a8d-baa7-3a81fa1b96f7
+  resourceVersion: "17697023597"
+  uid: 81f142f2-6472-47a0-b28d-c4efa85e4c57
+spec:
+  containers:
+  - image: nginx:stable
+    imagePullPolicy: IfNotPresent
+    name: nginx
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /usr/share/nginx/html/index.html
+      name: values-volume
+      subPath: index.html
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-xvtrd
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: scw-dev-daplay-dev-daplay-cluster-pool-0634fce
+  preemptionPolicy: PreemptLowerPriority
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - configMap:
+      defaultMode: 420
+      name: versions-monitor-values
+    name: values-volume
+  - name: kube-api-access-xvtrd
+    projected:
+      defaultMode: 420
+      sources:
+      - serviceAccountToken:
+          expirationSeconds: 3607
+          path: token
+      - configMap:
+          items:
+          - key: ca.crt
+            path: ca.crt
+          name: kube-root-ca.crt
+      - downwardAPI:
+          items:
+          - fieldRef:
+              apiVersion: v1
+              fieldPath: metadata.namespace
+            path: namespace
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2024-02-13T15:07:31Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2024-02-13T15:08:50Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2024-02-13T15:08:50Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2024-02-13T15:07:20Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: containerd://121db30e5ca0707310f440343ec8d6c02aeb8d56e12ed98c010535b4370b45be
+    image: docker.io/library/nginx:stable
+    imageID: docker.io/library/nginx@sha256:c2854e7c6fdfb1f12554f7b36bdd74047ec1ab886ff59379fd113400c120584f
+    lastState: {}
+    name: nginx
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2024-02-13T15:08:50Z"
+  hostIP: 10.40.0.3
+  phase: Running
+  podIP: 100.64.0.181
+  podIPs:
+  - ip: 100.64.0.181
+  qosClass: BestEffort
+  startTime: "2024-02-13T15:07:31Z"
