@@ -19,3 +19,4 @@ use apps:
 18. clipmenud
 19. scrot
 20. feh
+21. fzf
