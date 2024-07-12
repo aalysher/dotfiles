@@ -1,3 +1,0 @@
-{"timestamp":66737,"category":"browser.usage","name":"interaction","extra":{"glean_timestamp":"1720728992063","widget_id":"back-button","source":"nav-bar","flow_id":"{28b8e61b-ec25-4853-93b6-7ff832067b7f}"},"execution_counter":55}
-{"timestamp":171128,"category":"browser.usage","name":"interaction","extra":{"glean_timestamp":"1720729096454","flow_id":"{28b8e61b-ec25-4853-93b6-7ff832067b7f}","widget_id":"back-button","source":"nav-bar"},"execution_counter":55}
-{"timestamp":341639,"category":"browser.usage","name":"interaction","extra":{"widget_id":"back-button","glean_timestamp":"1720729266965","flow_id":"{28b8e61b-ec25-4853-93b6-7ff832067b7f}","source":"nav-bar"},"execution_counter":55}

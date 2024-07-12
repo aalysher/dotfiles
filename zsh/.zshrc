@@ -96,20 +96,23 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias f='nvim $(fzf -m --preview "bat --color=always {}")'
 alias vi='nvim'
 alias k='kubectl'
 alias open='xdg-open'
-alias t='tmux attach || tmux new-session'
 
+alias t='tmux attach || tmux new-session'
 # Attaches tmux to a session (example: ta portal)
 alias ta='tmux attach -t'
-
 # Creates a new session
 alias tn='tmux new-session'
-
 # Lists all ongoing sessions
 alias tl='tmux list-sessions'
 
