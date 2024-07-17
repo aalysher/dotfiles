@@ -107,6 +107,7 @@ alias f='nvim $(fzf -m --preview "bat --color=always {}")'
 alias vi='nvim'
 alias k='kubectl'
 alias open='xdg-open'
+alias lg='lazygit'
 
 alias t='tmux attach || tmux new-session'
 # Attaches tmux to a session (example: ta portal)
