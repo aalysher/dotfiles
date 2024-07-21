@@ -6,17 +6,22 @@ use apps:
 5. obsidian
 6. gpg
 7. git
-8. HTTPie
+8. postman
 9. telegram
 10. go
 11. Goland
 12. obs studio
 13. htop
 14. tmux
-15. docker
+15. docker, docker-compose
 16. postgres
 17. stow
 18. clipmenud
 19. scrot
 20. feh
 21. fzf
+22. lazygit
+23. kubectl
+24. vlc
+25. blueberry
+26. clipmenu
