@@ -25,4 +25,3 @@ use apps:
 24. vlc
 25. blueberry
 26. clipmenu
-27.
