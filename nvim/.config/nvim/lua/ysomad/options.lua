@@ -31,4 +31,7 @@ vim.g.mapleader = ' '
 vim.o.clipboard = "unnamedplus"
 vim.o.ignorecase = true
 
+-- Disable swap files
+opt.swapfile = false
+
 -- opt.guicursor = ""

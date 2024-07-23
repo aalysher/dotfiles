@@ -231,16 +231,9 @@ exec_always --no-startup-id xinput set-prop "Synaptics TM3471-020" "libinput Nat
 # Бинды для вызова приложений
 bindsym $mod + F1 exec --no-startup-id alacritty; exec --no-startup-id obsidian; exec firefox; exec --no-startup-id telegram-desktop;
 
-# вызов для loberta
-bindsym $mod + F2 exec --no-startup-id alacritty; exec --no-startup-id obsidian; exec brave; exec --no-startup-id telegram-desktop;
-
-assign [class="Brave-browser"] $ws2
-assign [class="Netsoft-com.netsoft.hubstaff"] $ws9
-
 
 # Привязка к воркспейсам
 assign [class="firefox"] $ws2
 assign [class="TelegramDesktop"] $ws5
 assign [class="obsidian"] $ws10
-
-
+assign [class="Netsoft-com.netsoft.hubstaff"] $ws9
