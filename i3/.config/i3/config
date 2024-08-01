@@ -224,8 +224,8 @@ bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/brightne
 bindsym XF86Display exec /home/aalysher/.config/scripts/dispay.sh
 
 # screeshot
-bindsym Print exec scrot /home/aalysher/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M-%S').png
-bindsym --release Shift+Print exec scrot -s /home/aalysher/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M-%S').png
+bindsym Print exec --no-startup-id ~/.config/i3/scripts/screenshot_notify.sh
+bindsym --release Shift+Print exec --no-startup-id ~/.config/i3/scripts/screenshot_notify.sh -s
 
 # Natural scrolling on touchpad Lenovo ThinkPad T14
 exec_always --no-startup-id xinput set-prop "Synaptics TM3471-020" "libinput Natural Scrolling Enabled" 1
