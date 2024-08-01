@@ -22,6 +22,7 @@ function get_album_art {
 
 # Функция для отображения уведомления о музыке
 function show_music_notif {
+    sleep 0.5
     song_title=$(playerctl -f "{{title}}" metadata)
     song_artist=$(playerctl -f "{{artist}}" metadata)
     song_album=$(playerctl -f "{{album}}" metadata)
@@ -37,12 +38,12 @@ function show_music_notif {
 case $1 in
     next_track)
         playerctl next
-        sleep 0.5 && show_music_notif
+        sleep 2 && show_music_notif
         ;;
 
     prev_track)
         playerctl previous
-        sleep 0.5 && show_music_notif
+        sleep 1 && show_music_notif
         ;;
 
     play_pause)
