@@ -219,6 +219,10 @@ exec_always --no-startup-id feh --bg-scale /home/aalysher/dotfiles/backgrounds/A
 bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/brightness_notify.sh +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/brightness_notify.sh 5%-
 
+# Управление музыкой
+bindsym Cancel exec --no-startup-id ~/.config/i3/scripts/music_notify.sh next_track
+bindsym XF86Go exec --no-startup-id ~/.config/i3/scripts/music_notify.sh prev_track
+bindsym XF86Messenger exec --no-startup-id ~/.config/i3/scripts/music_notify.sh play_pause
 
 # Choise monitor
 bindsym XF86Display exec /home/aalysher/.config/scripts/dispay.sh
@@ -242,10 +246,3 @@ assign [class="firefox"] $ws2
 assign [class="TelegramDesktop"] $ws5
 assign [class="obsidian"] $ws10
 assign [class="Netsoft-com.netsoft.hubstaff"] $ws9
-
-
-# Управление музыкой
-bindsym Cancel exec --no-startup-id ~/.config/i3/scripts/music_notify.sh next_track
-bindsym XF86Go exec --no-startup-id ~/.config/i3/scripts/music_notify.sh prev_track
-bindsym XF86Messenger exec --no-startup-id ~/.config/i3/scripts/music_notify.sh play_pause
-
