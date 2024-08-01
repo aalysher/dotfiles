@@ -26,3 +26,4 @@ use apps:
 25. blueberry
 26. clipmenu
 27. dunst
+28. playerctl
