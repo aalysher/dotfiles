@@ -39,9 +39,10 @@ exec --no-startup-id nm-applet
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer sset Master 10%+ && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer sset Master 10%- && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume_notify.sh 10%+ && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volume_notify.sh 10%- && $refresh_i3status
+bindsym XF86AudioMute exec --no-startup-id ~/.config/i3/scripts/volume_notify.sh toggle && $refresh_i3status
+
 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -215,8 +216,9 @@ bindsym $mod+m exec --no-startup-id clipmenu -i -fn Terminus:size=12 -nb '#002b3
 exec_always --no-startup-id feh --bg-scale /home/aalysher/dotfiles/backgrounds/A.png
 
 # brightness
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/brightness_notify.sh +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/brightness_notify.sh 5%-
+
 
 # Choise monitor
 bindsym XF86Display exec /home/aalysher/.config/scripts/dispay.sh
@@ -230,6 +232,9 @@ exec_always --no-startup-id xinput set-prop "Synaptics TM3471-020" "libinput Nat
 
 # Бинды для вызова приложений
 bindsym $mod + F1 exec --no-startup-id alacritty; exec --no-startup-id obsidian; exec firefox; exec --no-startup-id telegram-desktop;
+
+# Запуск демона уведомлений
+exec --no-startup-id dunst
 
 
 # Привязка к воркспейсам
