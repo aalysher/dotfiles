@@ -231,6 +231,9 @@ bindsym XF86Display exec /home/aalysher/.config/scripts/dispay.sh
 bindsym Print exec --no-startup-id ~/.config/i3/scripts/screenshot_notify.sh
 bindsym --release Shift+Print exec --no-startup-id ~/.config/i3/scripts/screenshot_notify.sh -s
 
+# notification
+exec --no-startup-id dunst
+
 # Natural scrolling on touchpad Lenovo ThinkPad T14
 exec_always --no-startup-id xinput set-prop "Synaptics TM3471-020" "libinput Natural Scrolling Enabled" 1
 

@@ -1,4 +1,5 @@
 return {
   'nvim-lua/plenary.nvim',
-  'nvim-web-devicons',
+  'nvim-tree/nvim-web-devicons',
+  'github/copilot.vim',
 }
