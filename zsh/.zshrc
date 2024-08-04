@@ -117,6 +117,17 @@ alias tn='tmux new-session'
 # Lists all ongoing sessions
 alias tl='tmux list-sessions'
 
+
+# yazi-cwd: yazi with automatic cd
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
 export GOPATH=$HOME/go
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
