@@ -1,7 +1,7 @@
 use apps:
 1. firefox
 2. neovim
-3. alacritty
+3. alacritty(or kitty with yazi)
 4. pass
 5. obsidian
 6. gpg
@@ -27,3 +27,4 @@ use apps:
 26. clipmenu
 27. playerctl
 28. dunst
+29. yazi
