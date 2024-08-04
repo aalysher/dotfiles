@@ -1,3 +1,4 @@
+-- rose-pine
 -- return {
 --   'rose-pine/neovim',
 --   config = function()
@@ -12,14 +13,16 @@
 --     vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 --   end
 -- }
+
+-- onedark
 return {
   {
-    "catppuccin/nvim",
+    "joshdick/onedark.vim",
     lazy = false,
-    name = "catppuccin",
+    name = "onedark",
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme "catppuccin-mocha"
+      vim.cmd.colorscheme "onedark"
     end
   }
 }

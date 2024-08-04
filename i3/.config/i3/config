@@ -205,7 +205,7 @@ for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4
 exec_always --no-startup-id "setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle"
 
 # Скорость перемещения курсора в vim
-exec_always --no-startup-id xset r rate 190 50
+exec_always --no-startup-id xset r rate 190 55
 
 # clipboard manager clipmenu
 exec --no-startup-id clipmenud &
