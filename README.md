@@ -1,7 +1,7 @@
 use apps:
 1. firefox
 2. neovim
-3. alacritty(or kitty with yazi)
+3. alacritty(or kitty with yazi) require `ttf-dejavu` font
 4. pass
 5. obsidian
 6. gpg
