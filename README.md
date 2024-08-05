@@ -27,4 +27,3 @@ use apps:
 26. clipmenu
 27. playerctl
 28. dunst
-29. yazi
