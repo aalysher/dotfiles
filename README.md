@@ -1,7 +1,7 @@
 use apps:
 1. firefox
 2. neovim
-3. alacritty(or kitty with yazi) require `ttf-dejavu` font
+3. alacritty(or kitty with yazi require `ttf-dejavu` font)
 4. pass
 5. obsidian
 6. gpg
@@ -11,10 +11,10 @@ use apps:
 10. go
 11. Goland
 12. obs studio
-13. htop
+13. htop(bottom - alternative on rust)
 14. tmux
 15. docker, docker-compose
-16. postgres
+16. light-locker(with Lightdm - alternative i3lock)
 17. stow
 18. clipmenud
 19. scrot
