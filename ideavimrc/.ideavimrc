@@ -41,3 +41,4 @@ set relativenumber
 set visualbell
 set noerrorbells
 set clipboard+=unnamed
+set ideajoin
