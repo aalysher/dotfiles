@@ -2,28 +2,28 @@ use apps:
 1. firefox
 2. neovim
 3. alacritty(or kitty with yazi require `ttf-dejavu` font)
-4. pass
-5. obsidian
-6. gpg
-7. git
-8. postman
-9. telegram
-10. go
-11. Goland
-12. obs studio
+4. pass (password manager)
+5. obsidian (notes)
+6. gpg (decode tool)
+7. git (must have)
+8. postman (optional)
+9. telegram (optional)
+10. go (main language)
+11. Goland (optional)
+12. obs studio (screen recorder)
 13. htop(bottom - alternative on rust)
-14. tmux
-15. docker, docker-compose
+14. tmux (must have)
+15. docker, docker-compose (must have)
 16. light-locker(with Lightdm - alternative i3lock)
-17. stow
-18. clipmenud
-19. scrot
-20. feh
-21. fzf
-22. lazygit
-23. kubectl
-24. vlc
-25. blueberry
+17. stow (amazing saver dotfiles)
+18. clipmenud (buffer manager)
+19. scrot (screenshot)
+20. feh (background image)
+21. fzf (awesome finder)
+22. lazygit (git for neovim)
+23. kubectl (k8s)
+24. vlc (video player)
+25. blueberry (bluetooth)
 26. clipmenu
-27. playerctl
-28. dunst
+27. playerctl (music)
+28. dunst (notification)
