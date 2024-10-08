@@ -238,7 +238,7 @@ exec --no-startup-id dunst
 exec_always --no-startup-id xinput set-prop "Synaptics TM3471-020" "libinput Natural Scrolling Enabled" 1
 
 # Бинды для вызова приложений
-bindsym $mod + F1 exec --no-startup-id alacritty; exec --no-startup-id obsidian; exec firefox; exec --no-startup-id telegram-desktop;
+bindsym $mod + F1 exec --no-startup-id kitty; exec --no-startup-id obsidian; exec firefox; exec --no-startup-id telegram-desktop;
 
 # Привязка к воркспейсам
 assign [class="firefox"] $ws2

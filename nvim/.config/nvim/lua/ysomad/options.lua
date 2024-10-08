@@ -35,3 +35,5 @@ vim.o.ignorecase = true
 opt.swapfile = false
 
 -- opt.guicursor = ""
+
+opt.cursorline = true
