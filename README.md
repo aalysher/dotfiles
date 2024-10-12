@@ -24,6 +24,6 @@ use apps:
 23. kubectl (k8s)
 24. vlc (video player)
 25. blueberry (bluetooth)
-26. clipmenu
+26. bat(alternative cat written on rust)
 27. playerctl (music)
 28. dunst (notification)
