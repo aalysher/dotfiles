@@ -5,7 +5,7 @@ return {
     require('Comment').setup()
 
     -- Маппинги для комментирования
-    vim.keymap.set("n", "<C-/>", function()
+    vim.keymap.set("n", "<C-_>", function()
       require("Comment.api").toggle.linewise.current()
     end, { desc = "Comment Toggle" })
 
