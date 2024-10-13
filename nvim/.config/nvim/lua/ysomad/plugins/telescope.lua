@@ -44,15 +44,15 @@ return {
       { desc = "Telescope Find all files" }
     )
 
-    -- vim.keymap.set('n', '<C-p>', builtin.git_files, { desc = "Fuzzy find git files" })
-    -- vim.keymap.set('n', '<leader>fb', function()
-    --   builtin.buffers({sort_mru=true, ignore_current_buffer=true})
-    -- end, { desc = "List opened buffers" })
-    -- vim.keymap.set('n', '<leader>fg', function()
-    --   builtin.grep_string({ search = vim.fn.input('Grep > ') });
-    -- end, { desc = "Grep string" })
-    -- vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = "List help tags" })
-    -- vim.keymap.set('n', '<leader>fx', builtin.treesitter, { desc = "List tresitter funcs, vars"})
+    vim.keymap.set('n', '<C-p>', builtin.git_files, { desc = "Fuzzy find git files" })
+    vim.keymap.set('n', '<leader>fb', function()
+      builtin.buffers({sort_mru=true, ignore_current_buffer=true})
+    end, { desc = "List opened buffers" })
+    vim.keymap.set('n', '<leader>fg', function()
+      builtin.grep_string({ search = vim.fn.input('Grep > ') });
+    end, { desc = "Grep string" })
+    vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = "List help tags" })
+    vim.keymap.set('n', '<leader>fx', builtin.treesitter, { desc = "List tresitter funcs, vars"})
   end
 }
 
