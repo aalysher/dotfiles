@@ -1,10 +1,21 @@
 #!/bin/bash
 
-# Имя встроенного монитора (замените на ваше имя)
+# Имя встроенного монитора
 INTERNAL_OUTPUT="eDP-1"
 
-# Имя внешнего монитора (замените на ваше имя)
-EXTERNAL_OUTPUT="HDMI-2"
+# Имена возможных внешних мониторов
+EXTERNAL_OUTPUT_HDMI="HDMI-2"
+EXTERNAL_OUTPUT_DP="DP-2"
+
+# Проверяем, какой монитор подключен
+if xrandr | grep -q "$EXTERNAL_OUTPUT_HDMI connected"; then
+    EXTERNAL_OUTPUT=$EXTERNAL_OUTPUT_HDMI
+elif xrandr | grep -q "$EXTERNAL_OUTPUT_DP connected"; then
+    EXTERNAL_OUTPUT=$EXTERNAL_OUTPUT_DP
+else
+    echo "Внешний монитор не обнаружен."
+    exit 1
+fi
 
 # Варианты выбора
 choices="laptop\ndual\nexternal\nclone"

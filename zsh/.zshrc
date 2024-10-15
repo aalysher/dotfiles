@@ -119,7 +119,7 @@ alias tl='tmux list-sessions'
 
 
 export GOPATH=$HOME/go
-export GOROOT=/usr/local/go
+export GOROOT=/usr/lib/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export KUBECONFIG=/home/aalysher/go/src/loberta/kubeconfig-stage-18peaches-3.yaml
 
