@@ -1,7 +1,7 @@
 #!/bin/bash
 
 INTERNAL_OUTPUT="eDP-1"
-EXTERNAL_OUTPUTS=("HDMI-1" "HDMI-2")
+EXTERNAL_OUTPUTS=("HDMI-1" "HDMI-2", "DP-1", "DP-2")
 
 # Функция для проверки подключенных внешних мониторов
 check_external_connected() {
