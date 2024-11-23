@@ -25,7 +25,7 @@ opt.signcolumn = 'yes'
 opt.isfname:append('@-@')
 
 opt.updatetime = 50
-opt.colorcolumn = '80'
+opt.colorcolumn = '121'
 
 vim.g.mapleader = ' '
 vim.o.clipboard = "unnamedplus"
@@ -37,3 +37,14 @@ opt.swapfile = false
 -- opt.guicursor = ""
 
 opt.cursorline = true
+
+
+-- Устанавливаем метод сворачивания для синтаксических блоков
+vim.o.foldmethod = "syntax"
+vim.o.foldlevel = 99  -- Показывает все уровни (для автоматического раскрытия можно изменить)
+vim.o.foldenable = true  -- Включает сворачивание при запуске
+
+-- Если требуется более гибкое сворачивание, можно использовать метод expr
+vim.o.foldmethod = "expr"
+vim.o.foldexpr = "nvim_treesitter#foldexpr()"  -- Используем Tree-sitter для более точного сворачивания
+

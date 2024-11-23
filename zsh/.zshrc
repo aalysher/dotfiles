@@ -104,7 +104,7 @@ source <(fzf --zsh)
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias f='nvim $(fzf -m --preview "bat --color=always {}")'
-alias vi='nvim'
+alias v='nvim'
 alias k='kubectl'
 alias open='xdg-open'
 alias lg='lazygit'
@@ -117,11 +117,9 @@ alias tn='tmux new-session'
 # Lists all ongoing sessions
 alias tl='tmux list-sessions'
 
-
 export GOPATH=$HOME/go
-export GOROOT=/usr/lib/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-export KUBECONFIG=/home/aalysher/go/src/loberta/kubeconfig-stage-18peaches-3.yaml
+
+export KUBECONFIG=/home/aalysher/go/src/peaches/kubeconfig-stage-18peaches-3.yaml
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
