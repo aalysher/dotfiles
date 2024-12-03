@@ -4,7 +4,7 @@ use apps:
 3. alacritty(or kitty with yazi require `ttf-dejavu` font)
 4. pass (password manager)
 5. obsidian (notes)
-6. gpg (decode tool)
+6. gpg (encode tool)
 7. git (must have)
 8. postman (optional)
 9. telegram (optional)
