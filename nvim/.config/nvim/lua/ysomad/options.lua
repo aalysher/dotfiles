@@ -15,7 +15,7 @@ opt.smartindent = true
 opt.wrap = false
 
 
-opt.hlsearch = true
+opt.hlsearch = false
 opt.incsearch = true
 
 opt.termguicolors = true
