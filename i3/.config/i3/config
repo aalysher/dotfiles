@@ -210,7 +210,7 @@ exec_always --no-startup-id xset r rate 190 55
 # clipboard manager clipmenu
 exec --no-startup-id clipmenud &
 # bindsym $mod+m exec --no-startup-id clipmenu
-bindsym $mod+m exec --no-startup-id clipmenu -i -fn Terminus:size=12 -nb '#002b36' -nf '#839496' -sb '#073642' -sf '#93a1a1'
+bindsym $mod+m exec --no-startup-id clipmenu -i -fn Terminus:size=14 -nb '#002b36' -nf '#839496' -sb '#073642' -sf '#93a1a1'
 
 # wallpaper
 exec_always --no-startup-id feh --bg-scale /home/aalysher/dotfiles/backgrounds/A.png
