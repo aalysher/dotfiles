@@ -65,10 +65,30 @@
 -- vs-code like pictograms
 return {
   {
-    "lunarvim/darkplus.nvim",
+    "Mofiqul/vscode.nvim",
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme("darkplus")
+      vim.cmd.colorscheme("vscode")
     end,
   },
 }
+
+-- custom goland theme
+-- return {
+--   {
+--     dir = "~/go/src/goland.nvim",
+--     priority = 1001,  -- выше чем у treesitter
+--     dependencies = { 'nvim-treesitter/nvim-treesitter' },
+--     config = function()
+--       -- Отключаем semantic tokens для go
+--       require('lspconfig').gopls.setup({
+--         on_attach = function(client)
+--           client.server_capabilities.semanticTokensProvider = nil
+--         end
+--       })
+--
+--       -- Устанавливаем нашу схему
+--       require('goland').setup()
+--     end,
+--   },
+-- }
