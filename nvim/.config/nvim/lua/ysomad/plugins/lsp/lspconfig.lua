@@ -104,7 +104,7 @@ return {
             unusedparams = true,
             unusedvariable = true,
             unusedwrite = true,
-            fieldalignment = true,
+            fieldalignment = false,
             nilness = true,
             useany = true,
           },
@@ -119,7 +119,7 @@ return {
           },
           staticcheck = true,
           gofumpt = true,
-          semanticTokens = true,
+          semanticTokens = false,
         },
       },
     })
