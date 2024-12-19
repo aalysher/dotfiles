@@ -27,3 +27,17 @@ use apps:
 26. bat(alternative cat written on rust)
 27. playerctl (music)
 28. dunst (notification)
+
+
+```
+sudo pacman -S --needed firefox go neovim kitty pass gpg git obsidian telegram-desktop lazygit clipmenu bottom obs-studio bottom tmux docker docker-compose light-locker lightdm stow scrot feh fzf kubectl vlc blueberry bat playerctl dunst ttf-dejavu
+```
+
+install yay
+```
+sudo pacman -S git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+
