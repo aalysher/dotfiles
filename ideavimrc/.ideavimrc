@@ -41,3 +41,4 @@ map <leader>b <Action>(ToggleLineBreakpoint)
 
 vmap K :m '<-2<CR>gv=gv
 vmap J :m '>+1<CR>gv=gv
+nmap ; :

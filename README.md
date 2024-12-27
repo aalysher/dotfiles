@@ -1,7 +1,7 @@
 use apps:
 1. firefox
 2. neovim
-3. alacritty(or kitty with yazi require `ttf-dejavu` font)
+3. ghostty(alacrity or kitty)
 4. pass (password manager)
 5. obsidian (notes)
 6. gpg (encode tool)
@@ -27,6 +27,7 @@ use apps:
 26. bat(alternative cat written on rust)
 27. playerctl (music)
 28. dunst (notification)
+29. yazi
 
 
 ```
