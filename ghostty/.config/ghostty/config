@@ -1,0 +1,27 @@
+gtk-titlebar=false
+keybind = alt+one=unbind
+
+font-family = "SF Mono"
+font-size = 13
+
+background = 1e1f22
+foreground = bcbec4
+cursor-color = ced0d6
+selection-background = 2d543f
+selection-foreground = bcbec4
+palette = 0=#1e1f22
+palette = 1=#f75464
+palette = 2=#6aab73
+palette = 3=#e0bb65
+palette = 4=#56a8f5
+palette = 5=#c77dbb
+palette = 6=#2aacb8
+palette = 7=#bcbec4
+palette = 8=#6f737a
+palette = 9=#fa6675
+palette = 10=#7fb347
+palette = 11=#f2c55c
+palette = 12=#548af7
+palette = 13=#b189f5
+palette = 14=#2fbaa3
+palette = 15=#dfe1e5
