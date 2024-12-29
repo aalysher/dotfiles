@@ -9,14 +9,15 @@ return {
   },
   config = function()
     local neotest = require('neotest')
-
     neotest.setup({
      adapters = {
         require("neotest-go")({
           experimental = {
             test_table = true,
           },
-          args = { "-v", "-count=1", "-timeout=60s" }
+          args = { "-v", "-count=1", "-timeout=60s" },
+          recursive_run = true,
+          file_pattern = "*.go",
         })
       },
     })
@@ -28,7 +29,9 @@ return {
     vim.keymap.set('n', '<leader>tf', function()
       neotest.run.run(vim.fn.expand("%"))
     end, { desc = "Neotest current file" })
-
+    vim.keymap.set('n', '<leader>ta', function()
+      neotest.run.run(vim.fn.getcwd())
+    end, { desc = "Run all tests" })
     vim.keymap.set('n', '<leader>tts', function()
       neotest.run.stop()
     end, { desc = "Neotest stop" })
