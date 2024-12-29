@@ -1,42 +1,21 @@
 return {
-  "folke/noice.nvim",
-  config = function()
-    local noice = require("noice")
-
-    noice.setup({
-      lsp = {
-        override = {
-          ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
-          ["vim.lsp.util.stylize_markdown"] = true,
-          ["cmp.entry.get_documentation"] = true,
-        },
-      },
-      messages = {
-        enabled = true,
-        view = "mini",
-        view_error = "mini",
-        view_warn = "mini",
-        view_history = "mini",
-        view_search = "mini",
-      },
-      presets = {
-        bottom_search = true,
-        command_palette = false,
-        long_message_to_split = true,
-        inc_rename = true,
-        lsp_doc_border = true,
-      },
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    opts = {
       routes = {
         {
-          view = "mini",
-          filter = { event = "notify", not_find = "Comment" },
-        },
-        {
-          view = "mini",
-          filter = { event = "msg_showmode", find = "recording" },
+          filter = { event = "notify", find = "No information available" },
+          opts = { skip = true },
         },
       },
-    })
-  end,
+      presets = {
+        lsp_doc_border = true,
+      },
+    },
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    },
+    vim.keymap.set("n", "<leader>nd", function() require("notify").dismiss({ silent = true, pending = true }) end, { desc = "Dismiss all notifications" })
 }
 
