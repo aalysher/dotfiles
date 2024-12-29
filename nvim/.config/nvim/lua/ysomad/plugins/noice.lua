@@ -29,7 +29,7 @@ return {
       routes = {
         {
           view = "mini",
-          filter = { event = "notify" },
+          filter = { event = "notify", not_find = "Comment" },
         },
         {
           view = "mini",
