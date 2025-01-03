@@ -6,7 +6,7 @@ return {
     vim.g.loaded_netrwPlugin = 1
     require("nvim-tree").setup({
       filters = {
-        dotfiles = true,
+        dotfiles = false,
       }
     })
     vim.keymap.set("n", "<A-1>", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Nvimtree Toggle window" })
