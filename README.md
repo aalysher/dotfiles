@@ -11,7 +11,7 @@ use apps:
 10. go (main language)
 11. Goland (optional)
 12. obs studio (screen recorder)
-13. htop(bottom - alternative on rust)
+13. btop
 14. tmux (must have)
 15. docker, docker-compose (must have)
 16. light-locker(with Lightdm - alternative i3lock)
@@ -31,7 +31,7 @@ use apps:
 
 
 ```
-sudo pacman -S --needed firefox go neovim kitty pass gpg git obsidian telegram-desktop lazygit clipmenu bottom obs-studio bottom tmux docker docker-compose light-locker lightdm stow scrot feh fzf kubectl vlc blueberry bat playerctl dunst ttf-dejavu
+sudo pacman -S --needed firefox go neovim ghostty yazi pass gpg git obsidian telegram-desktop lazygit clipmenu obs-studio btop tmux docker docker-compose light-locker lightdm stow scrot feh fzf kubectl vlc blueberry bat playerctl dunst ttf-dejavu
 ```
 
 install yay
