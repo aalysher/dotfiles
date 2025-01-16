@@ -1,3 +1,4 @@
+-- vscode theme
 return {
   {
     "Mofiqul/vscode.nvim",
@@ -19,3 +20,24 @@ return {
 --   },
 -- }
 
+-- return {
+--   {
+--     "shaunsingh/nord.nvim",
+--     priority = 1000,
+--     config = function()
+--       vim.cmd.colorscheme("nord")
+--     end,
+--   },
+-- }
+
+-- JetBrains dark theme
+-- return {
+--     "nickkadutskyi/jb.nvim",
+--     lazy = false,
+--     priority = 1000,
+--     opts = {},
+--     config = function()
+--         -- require("jb").setup({transparent = true})
+--         vim.cmd("colorscheme jb")
+--     end,
+-- }
