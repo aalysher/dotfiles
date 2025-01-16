@@ -36,7 +36,7 @@ let mapleader=" "
 map <leader>z <Action>(ToggleDistractionFreeMode)
 
 map <leader>fw <Action>(FindInPath)
-map <leader>fa <Action>(SearchEverywhere)
+map <leader>ff <Action>(SearchEverywhere)
 map <leader>b <Action>(ToggleLineBreakpoint)
 
 vmap K :m '<-2<CR>gv=gv
