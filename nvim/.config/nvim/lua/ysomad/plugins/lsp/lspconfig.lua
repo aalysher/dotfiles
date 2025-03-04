@@ -20,26 +20,6 @@ return {
     local on_attach = function(_client, bufnr)
       opts.buffer = bufnr
 
-      -- Настройка semantic tokens для gopls
-      if _client.name == 'gopls' then
-        _client.server_capabilities.semanticTokensProvider = {
-          full = true,
-          legend = {
-            tokenTypes = {
-              'namespace', 'type', 'class', 'enum', 'interface', 'struct',
-              'typeParameter', 'parameter', 'variable', 'property', 'enumMember',
-              'event', 'function', 'method', 'macro', 'keyword', 'modifier',
-              'comment', 'string', 'number', 'regexp', 'operator', 'decorator'
-            },
-            tokenModifiers = {
-              'declaration', 'definition', 'readonly', 'static', 'deprecated',
-              'abstract', 'async', 'modification', 'documentation', 'defaultLibrary'
-            }
-          },
-          range = true
-        }
-      end
-
       local builtin = require("telescope.builtin")
 
       opts.desc = "Show LSP references"
@@ -100,7 +80,7 @@ return {
     -- Расширенные capabilities для LSP
     local capabilities = cmp_nvim_lsp.default_capabilities()
     capabilities.textDocument.semanticTokens = {
-      dynamicRegistration = false,
+      dynamicRegistration = true,
       formats = { "relative" },
       multilineTokenSupport = false,
       overlappingTokenSupport = false,
@@ -108,10 +88,10 @@ return {
         full = {
           delta = true
         },
-        range = false
+        range = true
       },
-      tokenModifiers = {},
-      tokenTypes = {}
+      tokenModifiers = nil,
+      tokenTypes = nil
     }
 
     lspconfig["gopls"].setup({

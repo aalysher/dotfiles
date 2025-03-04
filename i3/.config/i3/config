@@ -216,6 +216,9 @@ bindsym $mod+m exec --no-startup-id clipmenu -i -fn Terminus:size=14 -nb '#002b3
 # wallpaper
 exec_always --no-startup-id feh --bg-scale /home/aalysher/dotfiles/backgrounds/A.png
 
+# caps to ctrl
+exec_always --no-startup-id ~/.xprofile
+
 # brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/brightness_notify.sh +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/brightness_notify.sh 5%-
@@ -226,7 +229,7 @@ bindsym XF86Go exec --no-startup-id ~/.config/i3/scripts/music_notify.sh prev_tr
 bindsym XF86Messenger exec --no-startup-id ~/.config/i3/scripts/music_notify.sh play_pause
 
 # Choise monitor
-bindsym XF86Display exec /home/aalysher/.config/scripts/dispay.sh
+bindsym XF86Display exec --no-startup-id nice -n -10 /home/aalysher/.config/scripts/dispay.sh
 
 # screeshot
 bindsym Print exec --no-startup-id ~/.config/i3/scripts/screenshot_notify.sh
