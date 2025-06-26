@@ -4,6 +4,7 @@ local autocmd = vim.api.nvim_create_autocmd
 local ysomad_group = augroup('ysomad', {})
 local yank_group = augroup('HighlightYank', {})
 local statusline_group = augroup('StatusLine', {})
+local go_group = augroup('GoSettings', {})
 
 -- highlight on yank
 autocmd('TextYankPost', {
@@ -47,18 +48,35 @@ autocmd('FileType', {
 autocmd('BufWritePre', {
   pattern = { '*.go' },
   callback = function()
-    local params = vim.lsp.util.make_range_params()
-    params.context = {only = {"source.organizeImports"}}
-    local result = vim.lsp.buf_request_sync(0, "textDocument/codeAction", params, 5000)
-    for cid, res in pairs(result or {}) do
-      for _, r in pairs(res.result or {}) do
-        if r.edit then
-          local enc = (vim.lsp.get_client_by_id(cid) or {}).offset_encoding or "utf-16"
-          vim.lsp.util.apply_workspace_edit(r.edit, enc)
-        end
-      end
+    local clients = vim.lsp.get_clients({ bufnr = 0, name = "gopls" })
+    if #clients == 0 then
+      return
     end
-    vim.lsp.buf.format({async = false})
+
+    -- Organize imports and format synchronously
+    vim.lsp.buf.code_action({
+      context = { only = { "source.organizeImports" } },
+      apply = true,
+    })
+    
+    vim.lsp.buf.format({ async = false })
+  end
+})
+
+-- go: set workspace folder for better LSP support
+autocmd('FileType', {
+  group = go_group,
+  pattern = 'go',
+  callback = function()
+    local root_dir = vim.fs.find({'go.mod', 'go.work', '.git'}, {
+      upward = true,
+      stop = vim.loop.os_homedir(),
+      path = vim.fs.dirname(vim.api.nvim_buf_get_name(0)),
+    })[1]                   
+
+    if root_dir then
+      vim.b.workspace_folder = vim.fs.dirname(root_dir)
+    end
   end
 })
 

@@ -17,25 +17,23 @@ return {
     local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
     local opts = { noremap = true, silent = true }
-    local on_attach = function(_client, bufnr)
+    local on_attach = function(client, bufnr)
       opts.buffer = bufnr
 
-      local builtin = require("telescope.builtin")
-
       opts.desc = "Show LSP references"
-      vim.keymap.set("n", "gr", builtin.lsp_references, opts)
+      vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
 
       opts.desc = "Go to declaration"
       vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
 
       opts.desc = "Show LSP definitions"
-      vim.keymap.set("n", "gd", builtin.lsp_definitions, opts)
+      vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
 
       opts.desc = "Show LSP implementations"
-      vim.keymap.set("n", "gi", builtin.lsp_implementations, opts)
+      vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
 
       opts.desc = "Show LSP type definitions"
-      vim.keymap.set("n", "gt", builtin.lsp_type_definitions, opts)
+      vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, opts)
 
       opts.desc = "See available code actions"
       vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
@@ -44,10 +42,10 @@ return {
       vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
 
       opts.desc = "Show buffer diagnostics"
-      vim.keymap.set("n", "<leader>D", builtin.diagnostics, opts)
+      vim.keymap.set("n", "<leader>D", vim.diagnostic.setqflist, opts)
 
       opts.desc = "Lsp diagnostic loclist"
-      vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, opts) -- исправлена опечатка otps -> opts
+      vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, opts)
 
       opts.desc = "Show line diagnostics"
       vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts)
@@ -77,26 +75,20 @@ return {
       vim.keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts)
     end
 
-    -- Расширенные capabilities для LSP
+    -- Enhanced capabilities for LSP
     local capabilities = cmp_nvim_lsp.default_capabilities()
-    capabilities.textDocument.semanticTokens = {
-      dynamicRegistration = true,
-      formats = { "relative" },
-      multilineTokenSupport = false,
-      overlappingTokenSupport = false,
-      requests = {
-        full = {
-          delta = true
-        },
-        range = true
-      },
-      tokenModifiers = nil,
-      tokenTypes = nil
+    capabilities.textDocument.completion.completionItem.snippetSupport = true
+    capabilities.textDocument.completion.completionItem.resolveSupport = {
+      properties = { "documentation", "detail", "additionalTextEdits" }
     }
 
     lspconfig["gopls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
+      root_dir = lspconfig.util.root_pattern("go.mod", "go.work", ".git"),
+      cmd = { "gopls" },
+      filetypes = { "go", "gomod", "gowork", "gotmpl" },
+      offset_encoding = "utf-16",
       settings = {
         gopls = {
           directoryFilters = { "-.git", "-node_modules" },
@@ -107,19 +99,33 @@ return {
             fieldalignment = false,
             nilness = true,
             useany = true,
+            shadow = true,
           },
           codelenses = {
             generate = true,
             run_govulncheck = true,
             tidy = true,
             upgrade_dependency = true,
+            vendor = true,
           },
           hints = {
-            constantValues = true
+            assignVariableTypes = false,
+            compositeLiteralFields = false,
+            compositeLiteralTypes = false,
+            constantValues = false,
+            functionTypeParameters = false,
+            parameterNames = false,
+            rangeVariableTypes = false,
           },
           staticcheck = true,
           gofumpt = true,
-          semanticTokens = true
+          semanticTokens = true,
+          usePlaceholders = true,
+          completeUnimported = true,
+          deepCompletion = true,
+          matcher = "Fuzzy",
+          experimentalPostfixCompletions = true,
+          buildFlags = { "-tags", "integration" },
         },
       },
     })
