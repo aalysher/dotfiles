@@ -1,7 +1,7 @@
 use apps:
 1. firefox
 2. neovim
-3. ghostty(alacrity or kitty)
+3. ghostty
 4. pass (password manager)
 5. obsidian (notes)
 6. gpg (encode tool)

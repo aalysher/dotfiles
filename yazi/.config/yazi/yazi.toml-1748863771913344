@@ -2,5 +2,5 @@
 edit = [
     { run = '/usr/bin/nvim "$@"', desc = "Neovim", block = true, for = "unix" },
 ]
-[mgr]
+[manager]
 show_hidden = true

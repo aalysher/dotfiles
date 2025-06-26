@@ -14,7 +14,6 @@ opt.expandtab = true
 opt.smartindent = true
 opt.wrap = false
 
-
 opt.hlsearch = false
 opt.incsearch = true
 
@@ -38,13 +37,9 @@ opt.swapfile = false
 
 opt.cursorline = true
 
-
--- Устанавливаем метод сворачивания для синтаксических блоков
-vim.o.foldmethod = "syntax"
-vim.o.foldlevel = 99  -- Показывает все уровни (для автоматического раскрытия можно изменить)
-vim.o.foldenable = true  -- Включает сворачивание при запуске
-
--- Если требуется более гибкое сворачивание, можно использовать метод expr
+-- Folding settings using treesitter
 vim.o.foldmethod = "expr"
-vim.o.foldexpr = "nvim_treesitter#foldexpr()"  -- Используем Tree-sitter для более точного сворачивания
+vim.o.foldexpr = "nvim_treesitter#foldexpr()"
+vim.o.foldlevel = 99
+vim.o.foldenable = true
 

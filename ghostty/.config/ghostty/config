@@ -1,8 +1,13 @@
 gtk-titlebar=false
 keybind = alt+one=unbind
 
-font-family = "SF Mono"
-font-size = 13
+# font-family = "SF Mono Light"
+font-size = 12
 
-theme = OceanicMaterial
-background = 1e1f22
+# theme = OceanicMaterial
+# background = 1e1f22
+
+
+
+font-family = "Fira Code"
+theme = iTerm2 Tango Dark
