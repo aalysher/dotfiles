@@ -191,8 +191,12 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+# bar {
+# 	status_command i3status -c /home/aalysher/.config/i3/i3status/i3status.conf
+# }
+
 bar {
-	status_command i3status -c /home/aalysher/.config/i3/i3status/i3status.conf
+    status_command /home/aalysher/dotfiles/i3/.config/i3/scripts/display-layout.sh
 }
 
 # Убрать рамки у окон
@@ -203,7 +207,7 @@ for_window [class="^.*"] border pixel 2
 for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4   #285577
 
 # Раскладка клавиатуры
-exec_always --no-startup-id "setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle"
+exec_always --no-startup-id "setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle,caps:ctrl_modifier"
 
 # Скорость перемещения курсора в vim
 exec_always --no-startup-id xset r rate 190 55
@@ -215,9 +219,6 @@ bindsym $mod+m exec --no-startup-id clipmenu -i -fn Terminus:size=14 -nb '#002b3
 
 # wallpaper
 exec_always --no-startup-id feh --bg-scale /home/aalysher/dotfiles/backgrounds/A.png
-
-# caps to ctrl
-exec_always --no-startup-id ~/.xprofile
 
 # brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/brightness_notify.sh +5%
@@ -242,7 +243,7 @@ exec --no-startup-id dunst
 exec_always --no-startup-id xinput set-prop "Synaptics TM3471-020" "libinput Natural Scrolling Enabled" 1
 
 # Бинды для вызова приложений
-bindsym $mod + F1 exec --no-startup-id ghostty; exec --no-startup-id obsidian; exec firefox; exec --no-startup-id telegram-desktop;
+bindsym $mod + F1 exec --no-startup-id ghostty; exec --no-startup-id obsidian; exec firefox; exec --no-startup-id Telegram;
 
 # Привязка к воркспейсам
 assign [class="firefox"] $ws2
