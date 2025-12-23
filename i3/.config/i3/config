@@ -207,7 +207,7 @@ for_window [class="^.*"] border pixel 2
 for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4   #285577
 
 # Раскладка клавиатуры
-exec_always --no-startup-id "setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle,caps:ctrl_modifier"
+exec_always --no-startup-id "setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle"
 
 # Скорость перемещения курсора в vim
 exec_always --no-startup-id xset r rate 190 55
@@ -242,11 +242,17 @@ exec --no-startup-id dunst
 # Natural scrolling on touchpad Lenovo ThinkPad T14
 exec_always --no-startup-id xinput set-prop "Synaptics TM3471-020" "libinput Natural Scrolling Enabled" 1
 
+# Nautilus
+bindsym $mod+n exec nautilus
+
 # Бинды для вызова приложений
-bindsym $mod + F1 exec --no-startup-id ghostty; exec --no-startup-id obsidian; exec firefox; exec --no-startup-id Telegram;
+bindsym $mod + F1 exec --no-startup-id ghostty; exec --no-startup-id obsidian; exec firefox; exec --no-startup-id Telegram; exec --no-startup-id cursor; exec --no-startup-id teams-for-linux; exec --no-startup-id google-chrome;
 
 # Привязка к воркспейсам
 assign [class="firefox"] $ws2
+assign [class="Google-chrome"] $ws2
 assign [class="TelegramDesktop"] $ws5
+assign [class="teams-for-linux"] $ws5
 assign [class="obsidian"] $ws10
-assign [class="Netsoft-com.netsoft.hubstaff"] $ws9
+assign [class="jetbrains-datagrip"] $ws4
+assign [class="Postman"] $ws4

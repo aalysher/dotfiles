@@ -13,7 +13,6 @@ return {
     "hrsh7th/cmp-nvim-lsp"
   },
   config = function()
-    local lspconfig = require("lspconfig")
     local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
     local opts = { noremap = true, silent = true }
@@ -82,10 +81,10 @@ return {
       properties = { "documentation", "detail", "additionalTextEdits" }
     }
 
-    lspconfig["gopls"].setup({
+    vim.lsp.config.gopls = {
       capabilities = capabilities,
       on_attach = on_attach,
-      root_dir = lspconfig.util.root_pattern("go.mod", "go.work", ".git"),
+      root_dir = vim.fs.root(0, { "go.mod", "go.work", ".git" }),
       cmd = { "gopls" },
       filetypes = { "go", "gomod", "gowork", "gotmpl" },
       offset_encoding = "utf-16",
@@ -109,8 +108,8 @@ return {
             vendor = true,
           },
           hints = {
-            assignVariableTypes = false,
-            compositeLiteralFields = false,
+            assignVariableTypes = true,
+            compositeLiteralFields = true,
             compositeLiteralTypes = false,
             constantValues = false,
             functionTypeParameters = false,
@@ -125,12 +124,11 @@ return {
           deepCompletion = true,
           matcher = "Fuzzy",
           experimentalPostfixCompletions = true,
-          buildFlags = { "-tags", "integration" },
         },
       },
-    })
+    }
 
-    lspconfig["lua_ls"].setup({
+    vim.lsp.config.lua_ls = {
       capabilities = capabilities,
       on_attach = on_attach,
       settings = {
@@ -146,11 +144,11 @@ return {
           },
         },
       },
-    })
+    }
 
-    lspconfig["bashls"].setup({
+    vim.lsp.config.bashls = {
       capabilities = capabilities,
       on_attach = on_attach,
-    })
+    }
   end,
 }

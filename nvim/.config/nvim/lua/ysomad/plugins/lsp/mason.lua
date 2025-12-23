@@ -21,8 +21,9 @@ return {
 
     require('mason-tool-installer').setup({
       ensure_installed = {
+        "delve", -- go debugger
         "gofumpt", -- go better gofmt
-        -- { "gotests", branch = "develop" }, -- go tests codegen
+        { "gotests", branch = "develop" }, -- go tests codegen
         "golangci-lint",
       }
     })
