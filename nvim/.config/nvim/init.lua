@@ -1,1 +1,1 @@
-require('ysomad')
+require('ninja')

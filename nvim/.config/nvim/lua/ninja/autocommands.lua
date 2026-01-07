@@ -1,7 +1,7 @@
 local augroup = vim.api.nvim_create_augroup
 local autocmd = vim.api.nvim_create_autocmd
 
-local ysomad_group = augroup('ysomad', {})
+local ninja_group = augroup('ninja', {})
 local yank_group = augroup('HighlightYank', {})
 local statusline_group = augroup('StatusLine', {})
 local go_group = augroup('GoSettings', {})
@@ -20,7 +20,7 @@ autocmd('TextYankPost', {
 
 --- remove all trailing whitespace on save
 autocmd('BufWritePre', {
-  group = ysomad_group,
+  group = ninja_group,
   pattern = '*',
   command = [[%s/\s\+$//e]],
 })
@@ -84,7 +84,7 @@ autocmd('FileType', {
 autocmd({"WinEnter", "BufEnter"}, {
   group = statusline_group,
   pattern = "*",
-  command = [[setlocal statusline=%!v:lua.require('ysomad.statusline').setup()]]
+  command = [[setlocal statusline=%!v:lua.require('ninja.statusline').setup()]]
 })
 
 

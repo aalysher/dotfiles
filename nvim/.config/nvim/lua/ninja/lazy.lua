@@ -12,6 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-  { import = 'ysomad.plugins' },
-  { import = 'ysomad.plugins.lsp' },
+  { import = 'ninja.plugins' },
+  { import = 'ninja.plugins.lsp' },
 })
