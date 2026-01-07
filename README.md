@@ -1,33 +1,35 @@
-use apps:
+### required:
+1. pass (password manager)
+2. gpg (encode tool)
+3. git (must have)
+4. stow (amazing saver dotfiles)
+
+
+### optional:
 1. firefox
 2. neovim
 3. ghostty
-4. pass (password manager)
-5. obsidian (notes)
-6. gpg (encode tool)
-7. git (must have)
-8. postman (optional)
-9. telegram (optional)
-10. go (main language)
-11. Goland (optional)
-12. obs studio (screen recorder)
-13. btop
-14. tmux (must have)
-15. docker, docker-compose (must have)
-16. light-locker(with Lightdm - alternative i3lock)
-17. stow (amazing saver dotfiles)
-18. clipmenud (buffer manager)
-19. scrot (screenshot)
-20. feh (background image)
-21. fzf (awesome finder)
-22. lazygit (git for neovim)
-23. kubectl (k8s)
-24. vlc (video player)
-25. blueberry (bluetooth)
-26. bat(alternative cat written on rust)
-27. playerctl (music)
-28. dunst (notification)
-29. yazi
+4. obsidian (notes)
+5. postman (optional)
+6. go (main language)
+7. Goland/Zed (optional)
+8. obs studio (screen recorder)
+9. btop
+10. tmux (must have)
+11. docker, docker-compose (must have)
+12. light-locker(with Lightdm - alternative i3lock)
+13. clipmenud (buffer manager)
+14. scrot (screenshot)
+15. feh (background image)
+16. fzf (awesome finder)
+17. lazygit (git for neovim)
+18. kubectl (k8s)
+19. vlc (video player)
+20. blueberry (bluetooth)
+21. bat(alternative cat written on rust)
+22. playerctl (music)
+23. dunst (notification)
+24. yazi/nautilus (TUI and GUI file managers)
 
 
 ```
