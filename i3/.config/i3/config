@@ -53,7 +53,8 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec ghostty
+bindsym $mod+Return exec alacritty
+# bindsym $mod+Return exec ghostty
 # bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
@@ -246,13 +247,12 @@ exec_always --no-startup-id xinput set-prop "Synaptics TM3471-020" "libinput Nat
 bindsym $mod+n exec nautilus
 
 # Бинды для вызова приложений
-bindsym $mod + F1 exec --no-startup-id ghostty; exec --no-startup-id obsidian; exec firefox; exec --no-startup-id Telegram; exec --no-startup-id cursor; exec --no-startup-id teams-for-linux; exec --no-startup-id google-chrome;
+bindsym $mod + F1 exec --no-startup-id ghostty; exec --no-startup-id obsidian; exec firefox; exec --no-startup-id Telegram; exec --no-startup-id zed;
 
 # Привязка к воркспейсам
 assign [class="firefox"] $ws2
 assign [class="Google-chrome"] $ws2
 assign [class="TelegramDesktop"] $ws5
-assign [class="teams-for-linux"] $ws5
 assign [class="obsidian"] $ws10
 assign [class="jetbrains-datagrip"] $ws4
 assign [class="Postman"] $ws4
