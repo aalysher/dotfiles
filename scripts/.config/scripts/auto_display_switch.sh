@@ -27,7 +27,7 @@ echo $$ > "$LOCK_FILE"
 INTERNAL_OUTPUT="eDP-1" # Adjust if your internal display name is different
 # List of potential external outputs, ordered by preference or commonality
 EXTERNAL_OUTPUT_CANDIDATES=("DP-1" "HDMI-1" "HDMI-2" "DP-2")
-WALLPAPER="/home/aalysher/dotfiles/backgrounds/A.png" # Path to your wallpaper
+WALLPAPER="/home/ninja/dotfiles/backgrounds/A.png" # Path to your wallpaper
 
 # --- Functions ---
 

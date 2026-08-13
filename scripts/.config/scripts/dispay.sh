@@ -22,7 +22,7 @@ else
 fi
 
 # Путь к обоям
-WALLPAPER="/home/aalysher/dotfiles/backgrounds/A.png"
+WALLPAPER="/home/ninja/dotfiles/backgrounds/A.png"
 
 # Варианты режимов
 choices="laptop\ndual\nexternal\nclone"

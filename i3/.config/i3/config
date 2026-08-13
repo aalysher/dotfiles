@@ -53,9 +53,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec alacritty
-# bindsym $mod+Return exec ghostty
-# bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec ghostty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -193,11 +191,11 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 # bar {
-# 	status_command i3status -c /home/aalysher/.config/i3/i3status/i3status.conf
+# 	status_command i3status -c /home/ninja/.config/i3/i3status/i3status.conf
 # }
 
 bar {
-    status_command /home/aalysher/dotfiles/i3/.config/i3/scripts/display-layout.sh
+    status_command /home/ninja/dotfiles/i3/.config/i3/scripts/display-layout.sh
 }
 
 # Убрать рамки у окон
@@ -208,7 +206,7 @@ for_window [class="^.*"] border pixel 2
 for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4   #285577
 
 # Раскладка клавиатуры
-exec_always --no-startup-id "setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle"
+exec_always --no-startup-id "setxkbmap -model pc105 -layout us,ru -option 'grp:alt_shift_toggle,ctrl:nocaps'"
 
 # Скорость перемещения курсора в vim
 exec_always --no-startup-id xset r rate 190 55
@@ -219,7 +217,7 @@ exec --no-startup-id clipmenud &
 bindsym $mod+m exec --no-startup-id clipmenu -i -fn Terminus:size=14 -nb '#002b36' -nf '#839496' -sb '#073642' -sf '#93a1a1'
 
 # wallpaper
-exec_always --no-startup-id feh --bg-scale /home/aalysher/dotfiles/backgrounds/A.png
+exec_always --no-startup-id feh --bg-scale /home/ninja/dotfiles/backgrounds/A.png
 
 # brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/brightness_notify.sh +5%
@@ -231,7 +229,7 @@ bindsym XF86Go exec --no-startup-id ~/.config/i3/scripts/music_notify.sh prev_tr
 bindsym XF86Messenger exec --no-startup-id ~/.config/i3/scripts/music_notify.sh play_pause
 
 # Choise monitor
-bindsym XF86Display exec --no-startup-id nice -n -10 /home/aalysher/.config/scripts/dispay.sh
+bindsym XF86Display exec --no-startup-id nice -n -10 /home/ninja/.config/scripts/dispay.sh
 
 # screeshot
 bindsym Print exec --no-startup-id ~/.config/i3/scripts/screenshot_notify.sh
