@@ -11,8 +11,7 @@ log_message() {
 
 if [ -e "$LOCK_FILE" ]; then
     # Check if the process holding the lock is still running
-    # If the process is not running, remove the stale lock file
-    if ! ps -p $(cat "$LOCK_FILE") > /dev/null; then
+    if ! ps -p $(cat "$LOCK_FILE") > /dev/null 2>&1; then
         rm -f "$LOCK_FILE"
     else
         log_message "Script is already running. Exiting."
@@ -24,14 +23,12 @@ fi
 echo $$ > "$LOCK_FILE"
 
 # --- Configuration ---
-INTERNAL_OUTPUT="eDP-1" # Adjust if your internal display name is different
-# List of potential external outputs, ordered by preference or commonality
+INTERNAL_OUTPUT="eDP-1" # Internal display name
 EXTERNAL_OUTPUT_CANDIDATES=("DP-1" "HDMI-1" "HDMI-2" "DP-2")
-WALLPAPER="/home/ninja/dotfiles/backgrounds/A.png" # Path to your wallpaper
+WALLPAPER="/home/ninja/dotfiles/backgrounds/A.png"
 
 # --- Functions ---
 
-# Function to update wallpaper
 update_wallpaper() {
     if [ -f "$WALLPAPER" ]; then
         feh --bg-scale "$WALLPAPER" &
@@ -41,28 +38,44 @@ update_wallpaper() {
     fi
 }
 
-# Function to setup external monitor resolution (reused from dispay.sh)
-setup_monitor() {
-    local output_name=$1
+apply_external_display() {
+    local output_name="$1"
     local resolutions=$(xrandr | grep -A 20 "$output_name connected" | grep -o "[0-9]*x[0-9]*" | sort -u)
 
     if echo "$resolutions" | grep -q "2560x1440"; then
-        xrandr --output "$output_name" --mode 2560x1440 --rate 143.98
-        log_message "Set $output_name to 2560x1440@143.98Hz."
+        xrandr --output "$INTERNAL_OUTPUT" --off --output "$output_name" --mode 2560x1440 --rate 143.98 --primary
+        log_message "Set $output_name to 2560x1440@143.98Hz (atomic)."
     else
-        xrandr --output "$output_name" --auto
-        log_message "Set $output_name to auto resolution."
+        xrandr --output "$INTERNAL_OUTPUT" --off --output "$output_name" --auto --primary
+        log_message "Set $output_name to auto resolution (atomic)."
     fi
+}
+
+apply_internal_display() {
+    local off_args=()
+    for candidate in "${EXTERNAL_OUTPUT_CANDIDATES[@]}"; do
+        off_args+=(--output "$candidate" --off)
+    done
+    xrandr --output "$INTERNAL_OUTPUT" --auto --primary "${off_args[@]}"
+    log_message "Set $INTERNAL_OUTPUT to auto/primary and turned off externals (atomic)."
 }
 
 # --- Main Logic ---
 
 log_message "Script started."
 
-# Find connected external monitor
+# Find connected external monitor (check sysfs first, fallback to xrandr)
 EXTERNAL_OUTPUT=""
 for candidate in "${EXTERNAL_OUTPUT_CANDIDATES[@]}"; do
-    if xrandr | grep -q "$candidate connected"; then
+    is_connected=0
+    for s in /sys/class/drm/card*-${candidate}/status /sys/class/drm/card*-HDMI-A-${candidate#HDMI-}/status; do
+        if [ -f "$s" ] && [ "$(cat "$s" 2>/dev/null)" == "connected" ]; then
+            is_connected=1
+            break
+        fi
+    done
+
+    if [ $is_connected -eq 1 ] || xrandr | grep -q "$candidate connected [0-9]"; then
         EXTERNAL_OUTPUT="$candidate"
         log_message "External monitor detected: $EXTERNAL_OUTPUT"
         break
@@ -70,38 +83,29 @@ for candidate in "${EXTERNAL_OUTPUT_CANDIDATES[@]}"; do
 done
 
 # Get lid state
-LID_STATE=$(cat /proc/acpi/button/lid/LID/state | grep -o 'open\|closed')
+LID_STATE="open"
+if [ -f /proc/acpi/button/lid/LID/state ]; then
+    LID_STATE=$(cat /proc/acpi/button/lid/LID/state | grep -o 'open\|closed')
+fi
 
 log_message "Lid state: $LID_STATE"
 log_message "External output detected: $EXTERNAL_OUTPUT"
 
 if [ "$LID_STATE" == "closed" ]; then
     if [ -n "$EXTERNAL_OUTPUT" ]; then
-        # Lid closed, external monitor connected: enable external, disable internal
         log_message "Lid closed, external connected: Enabling external, disabling internal."
-        setup_monitor "$EXTERNAL_OUTPUT"
-        xrandr --output "$EXTERNAL_OUTPUT" --primary --auto
-        xrandr --output "$INTERNAL_OUTPUT" --off
+        apply_external_display "$EXTERNAL_OUTPUT"
     else
-        # Lid closed, no external monitor: do nothing (system might suspend)
         log_message "Lid closed, no external connected: Doing nothing (system might suspend)."
-        # Optionally, you might want to add a suspend command here, but it's usually handled by logind.
     fi
-elif [ "$LID_STATE" == "open" ]; then
+else
+    # Lid open
     if [ -n "$EXTERNAL_OUTPUT" ]; then
-        # Lid open, external monitor connected: dual display
-        log_message "Lid open, external connected: Setting up dual display."
-        xrandr --output "$INTERNAL_OUTPUT" --off
-        setup_monitor "$EXTERNAL_OUTPUT"
-        xrandr --output "$EXTERNAL_OUTPUT" --right-of "$INTERNAL_OUTPUT" --primary
+        log_message "Lid open, external connected: Setting up external display."
+        apply_external_display "$EXTERNAL_OUTPUT"
     else
-        # Lid open, no external monitor: enable internal, disable external
         log_message "Lid open, no external connected: Enabling internal, disabling external."
-        xrandr --output "$INTERNAL_OUTPUT" --auto --primary
-        # Turn off all other connected outputs that are not the internal one
-        xrandr | grep " connected" | awk '{print $1}' | grep -v "$INTERNAL_OUTPUT" | while read -r output; do
-            xrandr --output "$output" --off
-        done
+        apply_internal_display
     fi
 fi
 

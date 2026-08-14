@@ -216,6 +216,9 @@ exec --no-startup-id clipmenud &
 # bindsym $mod+m exec --no-startup-id clipmenu
 bindsym $mod+m exec --no-startup-id clipmenu -i -fn Terminus:size=14 -nb '#002b36' -nf '#839496' -sb '#073642' -sf '#93a1a1'
 
+# display auto switch watcher
+exec_always --no-startup-id ~/.config/scripts/display_watcher.sh &
+
 # wallpaper
 exec_always --no-startup-id feh --bg-scale /home/ninja/dotfiles/backgrounds/A.png
 
