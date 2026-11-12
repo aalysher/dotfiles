@@ -5,8 +5,9 @@ keybind = alt+one=unbind
 font-size = 12
 
 theme = iTerm2 Solarized Dark
+# theme = Matrix
 # background = 1e1f22
 
-
+background-opacity = 0.95
 
 font-family = "Fira Code"
