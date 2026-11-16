@@ -6,3 +6,6 @@ require("solarized-osaka").setup({
     transparent = true,
 })
 vim.cmd.colorscheme("solarized-osaka")
+
+-- Более заметная подсветка строки с курсором
+vim.api.nvim_set_hl(0, "CursorLine", { bg = "#0f474f" })

@@ -29,11 +29,11 @@
 21. bat(alternative cat written on rust)
 22. playerctl (music)
 23. dunst (notification)
-24. yazi/nautilus (TUI and GUI file managers)
+24. nautilus (file managers)
 
 
 ```
-sudo pacman -S --needed firefox go neovim ghostty yazi pass gpg git obsidian telegram-desktop lazygit clipmenu obs-studio btop tmux docker docker-compose light-locker lightdm stow scrot feh fzf kubectl vlc blueberry bat playerctl dunst ttf-dejavu
+sudo pacman -S --needed firefox go neovim ghostty pass gpg git obsidian lazygit clipmenu btop tmux docker docker-compose light-locker lightdm stow scrot feh fzf bat playerctl dunst ttf-dejavu
 ```
 
 install yay

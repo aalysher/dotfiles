@@ -207,9 +207,13 @@ for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4
 
 # Раскладка клавиатуры
 exec_always --no-startup-id "setxkbmap -model pc105 -layout us,ru -option 'grp:alt_shift_toggle,ctrl:nocaps'"
+exec_always --no-startup-id ~/.config/scripts/layout_notify.py
 
 # Скорость перемещения курсора в vim
 exec_always --no-startup-id xset r rate 190 55
+
+# Отключить гашение экрана и DPMS при простое
+exec_always --no-startup-id xset s off -dpms
 
 # clipboard manager clipmenu
 exec --no-startup-id clipmenud &
@@ -254,12 +258,12 @@ bindsym $mod+n exec nautilus
 exec_always --no-startup-id picom -b
 
 # Бинды для вызова приложений
-bindsym $mod + F1 exec --no-startup-id ghostty; exec --no-startup-id obsidian; exec firefox; exec --no-startup-id Telegram; exec --no-startup-id herdr;
+bindsym $mod + F1 exec --no-startup-id ghostty; exec --no-startup-id obsidian; exec firefox; exec --no-startup-id /home/ninja/.local/bin/herdr-app;
 
 # Привязка к воркспейсам
 assign [class="firefox"] $ws2
-assign [class="Google-chrome"] $ws2
 assign [class="TelegramDesktop"] $ws5
 assign [class="obsidian"] $ws10
-assign [class="jetbrains-datagrip"] $ws4
-assign [class="Postman"] $ws4
+assign [class="herdr-app"] $ws3
+# assign [class="jetbrains-datagrip"] $ws4
+# assign [class="Postman"] $ws4

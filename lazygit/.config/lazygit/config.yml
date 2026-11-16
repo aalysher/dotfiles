@@ -1,0 +1,36 @@
+customCommands:
+  - key: "C"
+    command: "$HOME/.config/scripts/copilot_commit.sh"
+    description: "commit staged changes with Copilot"
+    context: "files"
+    loadingText: "Generating commit message with Copilot"
+    output: logWithPty
+gui:
+  mouseEvents: false
+  scrollHeight: 30
+  nerdFontsVersion: "3"
+  theme: # solarized-osaka (синхронизировано со snacks lazygit theme)
+    activeBorderColor:
+      - "#ffbab9"
+      - "bold"
+    cherryPickedCommitBgColor:
+      - "#5aaefa"
+    cherryPickedCommitFgColor:
+      - "#5aaefa"
+    defaultFgColor:
+      - "#b6c5c6"
+    inactiveBorderColor:
+      - "#664c00"
+    optionsTextColor:
+      - "#5aaefa"
+    searchingActiveBorderColor:
+      - "#ffbab9"
+      - "bold"
+    selectedLineBgColor:
+      - "#063540"
+    unstagedChangesColor:
+      - "#ff6c6a"
+git:
+  autoFetch: false
+  diffRenderers:
+    - command: delta --dark --syntax-theme="Solarized (dark)" --paging=never
